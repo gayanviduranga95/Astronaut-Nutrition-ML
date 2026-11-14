@@ -9,6 +9,7 @@ from src.nutrition_assessment import assess_nutrition
 from src.vitamin_d_api import router as vitamin_d_router
 from src.multi_nutrient_api import router as multi_nutrient_router
 from src.nutrition_api_v2 import router as nutrition_v2_router
+from src.nutrition_api_v3 import router as nutrition_v3_router
 app = FastAPI(
     title="Astronaut Nutrition Assessment API",
     version="1.1.0"
@@ -56,3 +57,4 @@ def assess(request: NutritionRequest):
 app.include_router(vitamin_d_router)
 app.include_router(multi_nutrient_router)
 app.include_router(nutrition_v2_router)
+app.include_router(nutrition_v3_router)

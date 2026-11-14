@@ -1,0 +1,5507 @@
+{
+  "dataset": "astronaut_nutrition_features_v3.csv",
+  "participant_count": 9254,
+  "column_count": 658,
+  "unique_participant_ids": 9254,
+  "duplicate_records": 0,
+  "duplicate_columns": 0,
+  "dtypes": {
+    "float64": 648,
+    "bool": 8,
+    "int64": 2
+  },
+  "feature_missingness": {
+    "SEQN": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__SDDSRVYR": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__RIDSTATR": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__RIAGENDR": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__RIDAGEYR": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__RIDAGEMN": {
+      "missing": 8657,
+      "percent": 93.55
+    },
+    "DEMO__RIDRETH1": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__RIDRETH3": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__RIDEXMON": {
+      "missing": 550,
+      "percent": 5.94
+    },
+    "DEMO__RIDEXAGM": {
+      "missing": 5821,
+      "percent": 62.9
+    },
+    "DEMO__DMQMILIZ": {
+      "missing": 3250,
+      "percent": 35.12
+    },
+    "DEMO__DMQADFC": {
+      "missing": 8693,
+      "percent": 93.94
+    },
+    "DEMO__DMDBORN4": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__DMDCITZN": {
+      "missing": 3,
+      "percent": 0.03
+    },
+    "DEMO__DMDYRSUS": {
+      "missing": 7306,
+      "percent": 78.95
+    },
+    "DEMO__DMDEDUC3": {
+      "missing": 6948,
+      "percent": 75.08
+    },
+    "DEMO__DMDEDUC2": {
+      "missing": 3685,
+      "percent": 39.82
+    },
+    "DEMO__DMDMARTL": {
+      "missing": 3685,
+      "percent": 39.82
+    },
+    "DEMO__RIDEXPRG": {
+      "missing": 8144,
+      "percent": 88.01
+    },
+    "DEMO__SIALANG": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__SIAPROXY": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__SIAINTRP": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__FIALANG": {
+      "missing": 474,
+      "percent": 5.12
+    },
+    "DEMO__FIAPROXY": {
+      "missing": 474,
+      "percent": 5.12
+    },
+    "DEMO__FIAINTRP": {
+      "missing": 474,
+      "percent": 5.12
+    },
+    "DEMO__MIALANG": {
+      "missing": 2570,
+      "percent": 27.77
+    },
+    "DEMO__MIAPROXY": {
+      "missing": 2570,
+      "percent": 27.77
+    },
+    "DEMO__MIAINTRP": {
+      "missing": 2570,
+      "percent": 27.77
+    },
+    "DEMO__AIALANGA": {
+      "missing": 4277,
+      "percent": 46.22
+    },
+    "DEMO__DMDHHSIZ": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__DMDFMSIZ": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__DMDHHSZA": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__DMDHHSZB": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__DMDHHSZE": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__DMDHRGND": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__DMDHRAGZ": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__DMDHREDZ": {
+      "missing": 490,
+      "percent": 5.3
+    },
+    "DEMO__DMDHRMAZ": {
+      "missing": 191,
+      "percent": 2.06
+    },
+    "DEMO__DMDHSEDZ": {
+      "missing": 4503,
+      "percent": 48.66
+    },
+    "DEMO__WTINT2YR": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__WTMEC2YR": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__SDMVPSU": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__SDMVSTRA": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DEMO__INDHHIN2": {
+      "missing": 491,
+      "percent": 5.31
+    },
+    "DEMO__INDFMIN2": {
+      "missing": 474,
+      "percent": 5.12
+    },
+    "DEMO__INDFMPIR": {
+      "missing": 1231,
+      "percent": 13.3
+    },
+    "BMX__BMDSTATS": {
+      "missing": 550,
+      "percent": 5.94
+    },
+    "BMX__BMXWT": {
+      "missing": 674,
+      "percent": 7.28
+    },
+    "BMX__BMIWT": {
+      "missing": 8838,
+      "percent": 95.5
+    },
+    "BMX__BMXRECUM": {
+      "missing": 8360,
+      "percent": 90.34
+    },
+    "BMX__BMIRECUM": {
+      "missing": 9230,
+      "percent": 99.74
+    },
+    "BMX__BMXHEAD": {
+      "missing": 9060,
+      "percent": 97.9
+    },
+    "BMX__BMIHEAD": {
+      "missing": 9254,
+      "percent": 100.0
+    },
+    "BMX__BMXHT": {
+      "missing": 1238,
+      "percent": 13.38
+    },
+    "BMX__BMIHT": {
+      "missing": 9155,
+      "percent": 98.93
+    },
+    "BMX__BMXBMI": {
+      "missing": 1249,
+      "percent": 13.5
+    },
+    "BMX__BMXLEG": {
+      "missing": 2551,
+      "percent": 27.57
+    },
+    "BMX__BMILEG": {
+      "missing": 8920,
+      "percent": 96.39
+    },
+    "BMX__BMXARML": {
+      "missing": 1077,
+      "percent": 11.64
+    },
+    "BMX__BMIARML": {
+      "missing": 8907,
+      "percent": 96.25
+    },
+    "BMX__BMXARMC": {
+      "missing": 1081,
+      "percent": 11.68
+    },
+    "BMX__BMIARMC": {
+      "missing": 8904,
+      "percent": 96.22
+    },
+    "BMX__BMXWAIST": {
+      "missing": 1653,
+      "percent": 17.86
+    },
+    "BMX__BMIWAIST": {
+      "missing": 8817,
+      "percent": 95.28
+    },
+    "BMX__BMXHIP": {
+      "missing": 3215,
+      "percent": 34.74
+    },
+    "BMX__BMIHIP": {
+      "missing": 8984,
+      "percent": 97.08
+    },
+    "DR1__WTDRD1": {
+      "missing": 550,
+      "percent": 5.94
+    },
+    "DR1__WTDR2D": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DR1__DR1DRSTZ": {
+      "missing": 550,
+      "percent": 5.94
+    },
+    "DR1__DR1EXMER": {
+      "missing": 1526,
+      "percent": 16.49
+    },
+    "DR1__DRABF": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DR1__DRDINT": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DR1__DR1DBIH": {
+      "missing": 1796,
+      "percent": 19.41
+    },
+    "DR1__DR1DAY": {
+      "missing": 1526,
+      "percent": 16.49
+    },
+    "DR1__DR1LANG": {
+      "missing": 1518,
+      "percent": 16.4
+    },
+    "DR1__DR1MRESP": {
+      "missing": 1616,
+      "percent": 17.46
+    },
+    "DR1__DR1HELP": {
+      "missing": 1622,
+      "percent": 17.53
+    },
+    "DR1__DBQ095Z": {
+      "missing": 1526,
+      "percent": 16.49
+    },
+    "DR1__DBD100": {
+      "missing": 4332,
+      "percent": 46.81
+    },
+    "DR1__DRQSPREP": {
+      "missing": 1526,
+      "percent": 16.49
+    },
+    "DR1__DR1STY": {
+      "missing": 1526,
+      "percent": 16.49
+    },
+    "DR1__DR1SKY": {
+      "missing": 8079,
+      "percent": 87.3
+    },
+    "DR1__DRQSDIET": {
+      "missing": 1526,
+      "percent": 16.49
+    },
+    "DR1__DRQSDT1": {
+      "missing": 8779,
+      "percent": 94.87
+    },
+    "DR1__DRQSDT2": {
+      "missing": 9159,
+      "percent": 98.97
+    },
+    "DR1__DRQSDT3": {
+      "missing": 9145,
+      "percent": 98.82
+    },
+    "DR1__DRQSDT4": {
+      "missing": 9214,
+      "percent": 99.57
+    },
+    "DR1__DRQSDT5": {
+      "missing": 9252,
+      "percent": 99.98
+    },
+    "DR1__DRQSDT6": {
+      "missing": 9250,
+      "percent": 99.96
+    },
+    "DR1__DRQSDT7": {
+      "missing": 9115,
+      "percent": 98.5
+    },
+    "DR1__DRQSDT8": {
+      "missing": 9231,
+      "percent": 99.75
+    },
+    "DR1__DRQSDT9": {
+      "missing": 9169,
+      "percent": 99.08
+    },
+    "DR1__DRQSDT10": {
+      "missing": 9228,
+      "percent": 99.72
+    },
+    "DR1__DRQSDT11": {
+      "missing": 9238,
+      "percent": 99.83
+    },
+    "DR1__DRQSDT12": {
+      "missing": 9244,
+      "percent": 99.89
+    },
+    "DR1__DRQSDT91": {
+      "missing": 9210,
+      "percent": 99.52
+    },
+    "DR1__DR1TNUMF": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DR1__DR1TKCAL": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TPROT": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TCARB": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TSUGR": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TFIBE": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TTFAT": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TSFAT": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TMFAT": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TPFAT": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TCHOL": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TATOC": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TATOA": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TRET": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TVARA": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TACAR": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TBCAR": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TCRYP": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TLYCO": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TLZ": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TVB1": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TVB2": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TNIAC": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TVB6": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TFOLA": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TFA": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TFF": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TFDFE": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TCHL": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TVB12": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TB12A": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TVC": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TVD": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TVK": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TCALC": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TPHOS": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TMAGN": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TIRON": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TZINC": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TCOPP": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TSODI": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TPOTA": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TSELE": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TCAFF": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TTHEO": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TALCO": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TMOIS": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TS040": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TS060": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TS080": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TS100": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TS120": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TS140": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TS160": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TS180": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TM161": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TM181": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TM201": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TM221": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TP182": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TP183": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TP184": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TP204": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TP205": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TP225": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1TP226": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "DR1__DR1_300": {
+      "missing": 1526,
+      "percent": 16.49
+    },
+    "DR1__DR1_320Z": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DR1__DR1_330Z": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DR1__DR1BWATZ": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DR1__DR1TWSZ": {
+      "missing": 1526,
+      "percent": 16.49
+    },
+    "DR1__DRD340": {
+      "missing": 1853,
+      "percent": 20.02
+    },
+    "DR1__DRD350A": {
+      "missing": 5949,
+      "percent": 64.29
+    },
+    "DR1__DRD350AQ": {
+      "missing": 8898,
+      "percent": 96.15
+    },
+    "DR1__DRD350B": {
+      "missing": 5949,
+      "percent": 64.29
+    },
+    "DR1__DRD350BQ": {
+      "missing": 8570,
+      "percent": 92.61
+    },
+    "DR1__DRD350C": {
+      "missing": 5949,
+      "percent": 64.29
+    },
+    "DR1__DRD350CQ": {
+      "missing": 9161,
+      "percent": 99.0
+    },
+    "DR1__DRD350D": {
+      "missing": 5949,
+      "percent": 64.29
+    },
+    "DR1__DRD350DQ": {
+      "missing": 8951,
+      "percent": 96.73
+    },
+    "DR1__DRD350E": {
+      "missing": 5949,
+      "percent": 64.29
+    },
+    "DR1__DRD350EQ": {
+      "missing": 9032,
+      "percent": 97.6
+    },
+    "DR1__DRD350F": {
+      "missing": 5949,
+      "percent": 64.29
+    },
+    "DR1__DRD350FQ": {
+      "missing": 8992,
+      "percent": 97.17
+    },
+    "DR1__DRD350G": {
+      "missing": 5949,
+      "percent": 64.29
+    },
+    "DR1__DRD350GQ": {
+      "missing": 8940,
+      "percent": 96.61
+    },
+    "DR1__DRD350H": {
+      "missing": 5949,
+      "percent": 64.29
+    },
+    "DR1__DRD350HQ": {
+      "missing": 6335,
+      "percent": 68.46
+    },
+    "DR1__DRD350I": {
+      "missing": 5949,
+      "percent": 64.29
+    },
+    "DR1__DRD350IQ": {
+      "missing": 9059,
+      "percent": 97.89
+    },
+    "DR1__DRD350J": {
+      "missing": 5949,
+      "percent": 64.29
+    },
+    "DR1__DRD350JQ": {
+      "missing": 9242,
+      "percent": 99.87
+    },
+    "DR1__DRD350K": {
+      "missing": 5949,
+      "percent": 64.29
+    },
+    "DR1__DRD360": {
+      "missing": 1853,
+      "percent": 20.02
+    },
+    "DR1__DRD370A": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370AQ": {
+      "missing": 8703,
+      "percent": 94.05
+    },
+    "DR1__DRD370B": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370BQ": {
+      "missing": 7679,
+      "percent": 82.98
+    },
+    "DR1__DRD370C": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370CQ": {
+      "missing": 9135,
+      "percent": 98.71
+    },
+    "DR1__DRD370D": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370DQ": {
+      "missing": 8631,
+      "percent": 93.27
+    },
+    "DR1__DRD370E": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370EQ": {
+      "missing": 8736,
+      "percent": 94.4
+    },
+    "DR1__DRD370F": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370FQ": {
+      "missing": 9085,
+      "percent": 98.17
+    },
+    "DR1__DRD370G": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370GQ": {
+      "missing": 9087,
+      "percent": 98.2
+    },
+    "DR1__DRD370H": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370HQ": {
+      "missing": 9141,
+      "percent": 98.78
+    },
+    "DR1__DRD370I": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370IQ": {
+      "missing": 9088,
+      "percent": 98.21
+    },
+    "DR1__DRD370J": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370JQ": {
+      "missing": 9247,
+      "percent": 99.92
+    },
+    "DR1__DRD370K": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370KQ": {
+      "missing": 9112,
+      "percent": 98.47
+    },
+    "DR1__DRD370L": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370LQ": {
+      "missing": 9232,
+      "percent": 99.76
+    },
+    "DR1__DRD370M": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370MQ": {
+      "missing": 7595,
+      "percent": 82.07
+    },
+    "DR1__DRD370N": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370NQ": {
+      "missing": 9041,
+      "percent": 97.7
+    },
+    "DR1__DRD370O": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370OQ": {
+      "missing": 9172,
+      "percent": 99.11
+    },
+    "DR1__DRD370P": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370PQ": {
+      "missing": 9248,
+      "percent": 99.94
+    },
+    "DR1__DRD370Q": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370QQ": {
+      "missing": 9219,
+      "percent": 99.62
+    },
+    "DR1__DRD370R": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370RQ": {
+      "missing": 9122,
+      "percent": 98.57
+    },
+    "DR1__DRD370S": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370SQ": {
+      "missing": 9193,
+      "percent": 99.34
+    },
+    "DR1__DRD370T": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370TQ": {
+      "missing": 8212,
+      "percent": 88.74
+    },
+    "DR1__DRD370U": {
+      "missing": 4916,
+      "percent": 53.12
+    },
+    "DR1__DRD370UQ": {
+      "missing": 9004,
+      "percent": 97.3
+    },
+    "DR1__DRD370V": {
+      "missing": 4917,
+      "percent": 53.13
+    },
+    "DR2__WTDRD1": {
+      "missing": 550,
+      "percent": 5.94
+    },
+    "DR2__WTDR2D": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DR2__DR2DRSTZ": {
+      "missing": 550,
+      "percent": 5.94
+    },
+    "DR2__DR2EXMER": {
+      "missing": 2540,
+      "percent": 27.45
+    },
+    "DR2__DRABF": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DR2__DRDINT": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DR2__DR2DBIH": {
+      "missing": 2755,
+      "percent": 29.77
+    },
+    "DR2__DR2DAY": {
+      "missing": 2540,
+      "percent": 27.45
+    },
+    "DR2__DR2LANG": {
+      "missing": 2532,
+      "percent": 27.36
+    },
+    "DR2__DR2MRESP": {
+      "missing": 2615,
+      "percent": 28.26
+    },
+    "DR2__DR2HELP": {
+      "missing": 2615,
+      "percent": 28.26
+    },
+    "DR2__DR2TNUMF": {
+      "missing": 2615,
+      "percent": 28.26
+    },
+    "DR2__DR2STY": {
+      "missing": 2540,
+      "percent": 27.45
+    },
+    "DR2__DR2SKY": {
+      "missing": 8209,
+      "percent": 88.71
+    },
+    "DR2__DR2TKCAL": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TPROT": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TCARB": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TSUGR": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TFIBE": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TTFAT": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TSFAT": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TMFAT": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TPFAT": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TCHOL": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TATOC": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TATOA": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TRET": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TVARA": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TACAR": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TBCAR": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TCRYP": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TLYCO": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TLZ": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TVB1": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TVB2": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TNIAC": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TVB6": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TFOLA": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TFA": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TFF": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TFDFE": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TCHL": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TVB12": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TB12A": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TVC": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TVD": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TVK": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TCALC": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TPHOS": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TMAGN": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TIRON": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TZINC": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TCOPP": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TSODI": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TPOTA": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TSELE": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TCAFF": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TTHEO": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TALCO": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TMOIS": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TS040": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TS060": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TS080": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TS100": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TS120": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TS140": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TS160": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TS180": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TM161": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TM181": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TM201": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TM221": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TP182": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TP183": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TP184": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TP204": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TP205": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TP225": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2TP226": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "DR2__DR2_300": {
+      "missing": 2540,
+      "percent": 27.45
+    },
+    "DR2__DR2_320Z": {
+      "missing": 2615,
+      "percent": 28.26
+    },
+    "DR2__DR2_330Z": {
+      "missing": 2615,
+      "percent": 28.26
+    },
+    "DR2__DR2BWATZ": {
+      "missing": 2615,
+      "percent": 28.26
+    },
+    "DR2__DR2TWSZ": {
+      "missing": 2540,
+      "percent": 27.45
+    },
+    "CBC__LBXWBCSI": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "CBC__LBXLYPCT": {
+      "missing": 1731,
+      "percent": 18.71
+    },
+    "CBC__LBXMOPCT": {
+      "missing": 1731,
+      "percent": 18.71
+    },
+    "CBC__LBXNEPCT": {
+      "missing": 1731,
+      "percent": 18.71
+    },
+    "CBC__LBXEOPCT": {
+      "missing": 1731,
+      "percent": 18.71
+    },
+    "CBC__LBXBAPCT": {
+      "missing": 1731,
+      "percent": 18.71
+    },
+    "CBC__LBDLYMNO": {
+      "missing": 1731,
+      "percent": 18.71
+    },
+    "CBC__LBDMONO": {
+      "missing": 1731,
+      "percent": 18.71
+    },
+    "CBC__LBDNENO": {
+      "missing": 1731,
+      "percent": 18.71
+    },
+    "CBC__LBDEONO": {
+      "missing": 1731,
+      "percent": 18.71
+    },
+    "CBC__LBDBANO": {
+      "missing": 1731,
+      "percent": 18.71
+    },
+    "CBC__LBXRBCSI": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "CBC__LBXHGB": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "CBC__LBXHCT": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "CBC__LBXMCVSI": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "CBC__LBXMCHSI": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "CBC__LBXMC": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "CBC__LBXRDW": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "CBC__LBXPLTSI": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "CBC__LBXMPSI": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "CBC__LBXNRBC": {
+      "missing": 1731,
+      "percent": 18.71
+    },
+    "VID__LBXVIDMS": {
+      "missing": 1845,
+      "percent": 19.94
+    },
+    "VID__LBDVIDLC": {
+      "missing": 1845,
+      "percent": 19.94
+    },
+    "VID__LBXVD2MS": {
+      "missing": 1845,
+      "percent": 19.94
+    },
+    "VID__LBDVD2LC": {
+      "missing": 1845,
+      "percent": 19.94
+    },
+    "VID__LBXVD3MS": {
+      "missing": 1844,
+      "percent": 19.93
+    },
+    "VID__LBDVD3LC": {
+      "missing": 1844,
+      "percent": 19.93
+    },
+    "VID__LBXVE3MS": {
+      "missing": 1852,
+      "percent": 20.01
+    },
+    "VID__LBDVE3LC": {
+      "missing": 1852,
+      "percent": 20.01
+    },
+    "WHQ__WHD010": {
+      "missing": 3148,
+      "percent": 34.02
+    },
+    "WHQ__WHD020": {
+      "missing": 3093,
+      "percent": 33.42
+    },
+    "WHQ__WHQ030": {
+      "missing": 3093,
+      "percent": 33.42
+    },
+    "WHQ__WHQ040": {
+      "missing": 3093,
+      "percent": 33.42
+    },
+    "WHQ__WHD050": {
+      "missing": 3093,
+      "percent": 33.42
+    },
+    "WHQ__WHQ060": {
+      "missing": 7981,
+      "percent": 86.24
+    },
+    "WHQ__WHQ070": {
+      "missing": 3878,
+      "percent": 41.91
+    },
+    "WHQ__WHD080A": {
+      "missing": 7502,
+      "percent": 81.07
+    },
+    "WHQ__WHD080B": {
+      "missing": 8299,
+      "percent": 89.68
+    },
+    "WHQ__WHD080C": {
+      "missing": 8297,
+      "percent": 89.66
+    },
+    "WHQ__WHD080D": {
+      "missing": 7446,
+      "percent": 80.46
+    },
+    "WHQ__WHD080E": {
+      "missing": 8624,
+      "percent": 93.19
+    },
+    "WHQ__WHD080F": {
+      "missing": 9004,
+      "percent": 97.3
+    },
+    "WHQ__WHD080G": {
+      "missing": 9062,
+      "percent": 97.93
+    },
+    "WHQ__WHD080H": {
+      "missing": 9145,
+      "percent": 98.82
+    },
+    "WHQ__WHD080I": {
+      "missing": 9170,
+      "percent": 99.09
+    },
+    "WHQ__WHD080J": {
+      "missing": 9109,
+      "percent": 98.43
+    },
+    "WHQ__WHD080K": {
+      "missing": 9215,
+      "percent": 99.58
+    },
+    "WHQ__WHD080M": {
+      "missing": 7623,
+      "percent": 82.38
+    },
+    "WHQ__WHD080N": {
+      "missing": 9066,
+      "percent": 97.97
+    },
+    "WHQ__WHD080O": {
+      "missing": 8335,
+      "percent": 90.07
+    },
+    "WHQ__WHD080P": {
+      "missing": 9219,
+      "percent": 99.62
+    },
+    "WHQ__WHD080Q": {
+      "missing": 7739,
+      "percent": 83.63
+    },
+    "WHQ__WHD080R": {
+      "missing": 8108,
+      "percent": 87.62
+    },
+    "WHQ__WHD080S": {
+      "missing": 8017,
+      "percent": 86.63
+    },
+    "WHQ__WHD080T": {
+      "missing": 7915,
+      "percent": 85.53
+    },
+    "WHQ__WHD080U": {
+      "missing": 9237,
+      "percent": 99.82
+    },
+    "WHQ__WHD080L": {
+      "missing": 9211,
+      "percent": 99.54
+    },
+    "WHQ__WHQ225": {
+      "missing": 3093,
+      "percent": 33.42
+    },
+    "WHQ__WHD110": {
+      "missing": 5036,
+      "percent": 54.42
+    },
+    "WHQ__WHD120": {
+      "missing": 4256,
+      "percent": 45.99
+    },
+    "WHQ__WHD130": {
+      "missing": 6216,
+      "percent": 67.17
+    },
+    "WHQ__WHD140": {
+      "missing": 3399,
+      "percent": 36.73
+    },
+    "WHQ__WHQ150": {
+      "missing": 3484,
+      "percent": 37.65
+    },
+    "WHQ__WHQ190": {
+      "missing": 3093,
+      "percent": 33.42
+    },
+    "WHQ__WHQ200": {
+      "missing": 9180,
+      "percent": 99.2
+    },
+    "DS1__WTDRD1": {
+      "missing": 550,
+      "percent": 5.94
+    },
+    "DS1__WTDR2D": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DS1__DR1DRSTZ": {
+      "missing": 550,
+      "percent": 5.94
+    },
+    "DS1__DR1EXMER": {
+      "missing": 1526,
+      "percent": 16.49
+    },
+    "DS1__DRDINT": {
+      "missing": 1613,
+      "percent": 17.43
+    },
+    "DS1__DR1DBIH": {
+      "missing": 1796,
+      "percent": 19.41
+    },
+    "DS1__DR1DAY": {
+      "missing": 1526,
+      "percent": 16.49
+    },
+    "DS1__DR1LANG": {
+      "missing": 1518,
+      "percent": 16.4
+    },
+    "DS1__DR1MRESP": {
+      "missing": 1616,
+      "percent": 17.46
+    },
+    "DS1__DR1HELP": {
+      "missing": 1622,
+      "percent": 17.53
+    },
+    "DS1__DS1DSCNT": {
+      "missing": 1639,
+      "percent": 17.71
+    },
+    "DS1__DS1DS": {
+      "missing": 1639,
+      "percent": 17.71
+    },
+    "DS1__DS1ANCNT": {
+      "missing": 1618,
+      "percent": 17.48
+    },
+    "DS1__DS1AN": {
+      "missing": 1618,
+      "percent": 17.48
+    },
+    "DS1__DS1TKCAL": {
+      "missing": 8120,
+      "percent": 87.75
+    },
+    "DS1__DS1TPROT": {
+      "missing": 9114,
+      "percent": 98.49
+    },
+    "DS1__DS1TCARB": {
+      "missing": 8362,
+      "percent": 90.36
+    },
+    "DS1__DS1TSUGR": {
+      "missing": 8726,
+      "percent": 94.29
+    },
+    "DS1__DS1TFIBE": {
+      "missing": 9146,
+      "percent": 98.83
+    },
+    "DS1__DS1TTFAT": {
+      "missing": 8742,
+      "percent": 94.47
+    },
+    "DS1__DS1TSFAT": {
+      "missing": 9182,
+      "percent": 99.22
+    },
+    "DS1__DS1TMFAT": {
+      "missing": 9207,
+      "percent": 99.49
+    },
+    "DS1__DS1TPFAT": {
+      "missing": 9116,
+      "percent": 98.51
+    },
+    "DS1__DS1TCHOL": {
+      "missing": 8960,
+      "percent": 96.82
+    },
+    "DS1__DS1TLYCO": {
+      "missing": 8875,
+      "percent": 95.9
+    },
+    "DS1__DS1TLZ": {
+      "missing": 8814,
+      "percent": 95.25
+    },
+    "DS1__DS1TVB1": {
+      "missing": 8204,
+      "percent": 88.65
+    },
+    "DS1__DS1TVB2": {
+      "missing": 8214,
+      "percent": 88.76
+    },
+    "DS1__DS1TNIAC": {
+      "missing": 8100,
+      "percent": 87.53
+    },
+    "DS1__DS1TVB6": {
+      "missing": 7800,
+      "percent": 84.29
+    },
+    "DS1__DS1TVB12": {
+      "missing": 7700,
+      "percent": 83.21
+    },
+    "DS1__DS1TFA": {
+      "missing": 7832,
+      "percent": 84.63
+    },
+    "DS1__DS1TFDFE": {
+      "missing": 7832,
+      "percent": 84.63
+    },
+    "DS1__DS1TCHL": {
+      "missing": 8919,
+      "percent": 96.38
+    },
+    "DS1__DS1TVC": {
+      "missing": 7633,
+      "percent": 82.48
+    },
+    "DS1__DS1TVK": {
+      "missing": 8485,
+      "percent": 91.69
+    },
+    "DS1__DS1TVD": {
+      "missing": 7415,
+      "percent": 80.13
+    },
+    "DS1__DS1TCALC": {
+      "missing": 7931,
+      "percent": 85.7
+    },
+    "DS1__DS1TPHOS": {
+      "missing": 8748,
+      "percent": 94.53
+    },
+    "DS1__DS1TMAGN": {
+      "missing": 8369,
+      "percent": 90.44
+    },
+    "DS1__DS1TIRON": {
+      "missing": 8600,
+      "percent": 92.93
+    },
+    "DS1__DS1TZINC": {
+      "missing": 7967,
+      "percent": 86.09
+    },
+    "DS1__DS1TCOPP": {
+      "missing": 8405,
+      "percent": 90.83
+    },
+    "DS1__DS1TSODI": {
+      "missing": 8852,
+      "percent": 95.66
+    },
+    "DS1__DS1TPOTA": {
+      "missing": 8634,
+      "percent": 93.3
+    },
+    "DS1__DS1TSELE": {
+      "missing": 8446,
+      "percent": 91.27
+    },
+    "DS1__DS1TCAFF": {
+      "missing": 9241,
+      "percent": 99.86
+    },
+    "DS1__DS1TIODI": {
+      "missing": 8188,
+      "percent": 88.48
+    },
+    "DSQ__DSDCOUNT": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DSQ__DSDANCNT": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DSQ__DSD010": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DSQ__DSD010AN": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "DSQ__DSQTKCAL": {
+      "missing": 7404,
+      "percent": 80.01
+    },
+    "DSQ__DSQTPROT": {
+      "missing": 9049,
+      "percent": 97.78
+    },
+    "DSQ__DSQTCARB": {
+      "missing": 7724,
+      "percent": 83.47
+    },
+    "DSQ__DSQTSUGR": {
+      "missing": 8266,
+      "percent": 89.32
+    },
+    "DSQ__DSQTFIBE": {
+      "missing": 9106,
+      "percent": 98.4
+    },
+    "DSQ__DSQTTFAT": {
+      "missing": 8521,
+      "percent": 92.08
+    },
+    "DSQ__DSQTSFAT": {
+      "missing": 9129,
+      "percent": 98.65
+    },
+    "DSQ__DSQTMFAT": {
+      "missing": 9174,
+      "percent": 99.14
+    },
+    "DSQ__DSQTPFAT": {
+      "missing": 9035,
+      "percent": 97.63
+    },
+    "DSQ__DSQTCHOL": {
+      "missing": 8821,
+      "percent": 95.32
+    },
+    "DSQ__DSQTLYCO": {
+      "missing": 8670,
+      "percent": 93.69
+    },
+    "DSQ__DSQTLZ": {
+      "missing": 8556,
+      "percent": 92.46
+    },
+    "DSQ__DSQTVB1": {
+      "missing": 7582,
+      "percent": 81.93
+    },
+    "DSQ__DSQTVB2": {
+      "missing": 7587,
+      "percent": 81.99
+    },
+    "DSQ__DSQTNIAC": {
+      "missing": 7425,
+      "percent": 80.24
+    },
+    "DSQ__DSQTVB6": {
+      "missing": 6844,
+      "percent": 73.96
+    },
+    "DSQ__DSQTFA": {
+      "missing": 6919,
+      "percent": 74.77
+    },
+    "DSQ__DSQTFDFE": {
+      "missing": 6919,
+      "percent": 74.77
+    },
+    "DSQ__DSQTCHL": {
+      "missing": 8669,
+      "percent": 93.68
+    },
+    "DSQ__DSQTVB12": {
+      "missing": 6683,
+      "percent": 72.22
+    },
+    "DSQ__DSQTVC": {
+      "missing": 6522,
+      "percent": 70.48
+    },
+    "DSQ__DSQTVK": {
+      "missing": 8021,
+      "percent": 86.68
+    },
+    "DSQ__DSQTVD": {
+      "missing": 6278,
+      "percent": 67.84
+    },
+    "DSQ__DSQTCALC": {
+      "missing": 6821,
+      "percent": 73.71
+    },
+    "DSQ__DSQTPHOS": {
+      "missing": 8475,
+      "percent": 91.58
+    },
+    "DSQ__DSQTMAGN": {
+      "missing": 7813,
+      "percent": 84.43
+    },
+    "DSQ__DSQTIRON": {
+      "missing": 8206,
+      "percent": 88.68
+    },
+    "DSQ__DSQTZINC": {
+      "missing": 7090,
+      "percent": 76.62
+    },
+    "DSQ__DSQTCOPP": {
+      "missing": 7914,
+      "percent": 85.52
+    },
+    "DSQ__DSQTSODI": {
+      "missing": 8557,
+      "percent": 92.47
+    },
+    "DSQ__DSQTPOTA": {
+      "missing": 8378,
+      "percent": 90.53
+    },
+    "DSQ__DSQTSELE": {
+      "missing": 7967,
+      "percent": 86.09
+    },
+    "DSQ__DSQTCAFF": {
+      "missing": 9238,
+      "percent": 99.83
+    },
+    "DSQ__DSQTIODI": {
+      "missing": 7458,
+      "percent": 80.59
+    },
+    "age_years": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "sex_code": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "weight_kg": {
+      "missing": 674,
+      "percent": 7.28
+    },
+    "height_cm": {
+      "missing": 1238,
+      "percent": 13.38
+    },
+    "bmi": {
+      "missing": 1249,
+      "percent": 13.5
+    },
+    "waist_cm": {
+      "missing": 1653,
+      "percent": 17.86
+    },
+    "hip_cm": {
+      "missing": 3215,
+      "percent": 34.74
+    },
+    "hemoglobin_g_dl": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "hematocrit_pct": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "rbc_count": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "mcv_fl": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "mch_pg": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "rdw_pct": {
+      "missing": 1726,
+      "percent": 18.65
+    },
+    "serum_vitamin_d_nmol_l": {
+      "missing": 1845,
+      "percent": 19.94
+    },
+    "day1_energy_kcal": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_protein_g": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_carbohydrate_g": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_fat_g": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_fiber_g": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_calcium_mg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_iron_mg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_vitamin_d_mcg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_vitamin_b12_mcg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_vitamin_c_mg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_magnesium_mg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_zinc_mg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_potassium_mg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_sodium_mg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_phosphorus_mg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_selenium_mcg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_vitamin_b6_mg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_vitamin_k_mcg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day1_folate_dfe_mcg": {
+      "missing": 1770,
+      "percent": 19.13
+    },
+    "day2_energy_kcal": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_protein_g": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_carbohydrate_g": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_fat_g": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_fiber_g": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_calcium_mg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_iron_mg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_vitamin_d_mcg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_vitamin_b12_mcg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_vitamin_c_mg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_magnesium_mg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_zinc_mg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_potassium_mg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_sodium_mg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_phosphorus_mg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_selenium_mcg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_vitamin_b6_mg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_vitamin_k_mcg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "day2_folate_dfe_mcg": {
+      "missing": 2752,
+      "percent": 29.74
+    },
+    "avg_energy_kcal": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_protein_g": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_carbohydrate_g": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_fat_g": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_fiber_g": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_calcium_mg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_iron_mg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_vitamin_d_mcg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_vitamin_b12_mcg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_vitamin_c_mg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_magnesium_mg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_zinc_mg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_potassium_mg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_sodium_mg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_phosphorus_mg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_selenium_mcg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_vitamin_b6_mg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_vitamin_k_mcg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "avg_folate_dfe_mcg": {
+      "missing": 1759,
+      "percent": 19.01
+    },
+    "has_bmx_record": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "has_dr1_record": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "has_dr2_record": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "has_cbc_record": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "has_vid_record": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "has_whq_record": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "has_ds1_record": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "has_dsq_record": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "BIOPRO__LBXSATSI": {
+      "missing": 3352,
+      "percent": 36.22
+    },
+    "BIOPRO__LBDSATLC": {
+      "missing": 3352,
+      "percent": 36.22
+    },
+    "BIOPRO__LBXSAL": {
+      "missing": 3349,
+      "percent": 36.19
+    },
+    "BIOPRO__LBDSALSI": {
+      "missing": 3349,
+      "percent": 36.19
+    },
+    "BIOPRO__LBXSAPSI": {
+      "missing": 3351,
+      "percent": 36.21
+    },
+    "BIOPRO__LBXSASSI": {
+      "missing": 3372,
+      "percent": 36.44
+    },
+    "BIOPRO__LBXSC3SI": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBXSBU": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBDSBUSI": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBXSCLSI": {
+      "missing": 3350,
+      "percent": 36.2
+    },
+    "BIOPRO__LBXSCK": {
+      "missing": 3355,
+      "percent": 36.25
+    },
+    "BIOPRO__LBXSCR": {
+      "missing": 3351,
+      "percent": 36.21
+    },
+    "BIOPRO__LBDSCRSI": {
+      "missing": 3351,
+      "percent": 36.21
+    },
+    "BIOPRO__LBXSGB": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBDSGBSI": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBXSGL": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBDSGLSI": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBXSGTSI": {
+      "missing": 3352,
+      "percent": 36.22
+    },
+    "BIOPRO__LBDSGTLC": {
+      "missing": 3352,
+      "percent": 36.22
+    },
+    "BIOPRO__LBXSIR": {
+      "missing": 3352,
+      "percent": 36.22
+    },
+    "BIOPRO__LBDSIRSI": {
+      "missing": 3352,
+      "percent": 36.22
+    },
+    "BIOPRO__LBXSLDSI": {
+      "missing": 3481,
+      "percent": 37.62
+    },
+    "BIOPRO__LBXSOSSI": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBXSPH": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBDSPHSI": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBXSKSI": {
+      "missing": 3355,
+      "percent": 36.25
+    },
+    "BIOPRO__LBXSNASI": {
+      "missing": 3350,
+      "percent": 36.2
+    },
+    "BIOPRO__LBXSTB": {
+      "missing": 3351,
+      "percent": 36.21
+    },
+    "BIOPRO__LBDSTBSI": {
+      "missing": 3352,
+      "percent": 36.22
+    },
+    "BIOPRO__LBDSTBLC": {
+      "missing": 3351,
+      "percent": 36.21
+    },
+    "BIOPRO__LBXSCA": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBDSCASI": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBXSCH": {
+      "missing": 3351,
+      "percent": 36.21
+    },
+    "BIOPRO__LBDSCHSI": {
+      "missing": 3351,
+      "percent": 36.21
+    },
+    "BIOPRO__LBXSTP": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBDSTPSI": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBXSTR": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBDSTRSI": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBXSUA": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "BIOPRO__LBDSUASI": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "GHB__LBXGH": {
+      "missing": 3209,
+      "percent": 34.68
+    },
+    "FERTIN__LBXFER": {
+      "missing": 2665,
+      "percent": 28.8
+    },
+    "FERTIN__LBDFERSI": {
+      "missing": 2665,
+      "percent": 28.8
+    },
+    "HDL__LBDHDD": {
+      "missing": 2516,
+      "percent": 27.19
+    },
+    "HDL__LBDHDDSI": {
+      "missing": 2516,
+      "percent": 27.19
+    },
+    "TCHOL__LBXTC": {
+      "missing": 2516,
+      "percent": 27.19
+    },
+    "TCHOL__LBDTCSI": {
+      "missing": 2516,
+      "percent": 27.19
+    },
+    "TRIGLY__WTSAF2YR": {
+      "missing": 6218,
+      "percent": 67.19
+    },
+    "TRIGLY__LBXTR": {
+      "missing": 6420,
+      "percent": 69.38
+    },
+    "TRIGLY__LBDTRSI": {
+      "missing": 6420,
+      "percent": 69.38
+    },
+    "TRIGLY__LBDLDL": {
+      "missing": 6446,
+      "percent": 69.66
+    },
+    "TRIGLY__LBDLDLSI": {
+      "missing": 6446,
+      "percent": 69.66
+    },
+    "TRIGLY__LBDLDLM": {
+      "missing": 6446,
+      "percent": 69.66
+    },
+    "TRIGLY__LBDLDMSI": {
+      "missing": 6446,
+      "percent": 69.66
+    },
+    "TRIGLY__LBDLDLN": {
+      "missing": 6427,
+      "percent": 69.45
+    },
+    "TRIGLY__LBDLDNSI": {
+      "missing": 6427,
+      "percent": 69.45
+    },
+    "ALB_CR__URXUMA": {
+      "missing": 1622,
+      "percent": 17.53
+    },
+    "ALB_CR__URXUMS": {
+      "missing": 1622,
+      "percent": 17.53
+    },
+    "ALB_CR__URDUMALC": {
+      "missing": 1622,
+      "percent": 17.53
+    },
+    "ALB_CR__URXUCR": {
+      "missing": 1622,
+      "percent": 17.53
+    },
+    "ALB_CR__URXCRS": {
+      "missing": 1622,
+      "percent": 17.53
+    },
+    "ALB_CR__URDUCRLC": {
+      "missing": 1622,
+      "percent": 17.53
+    },
+    "ALB_CR__URDACT": {
+      "missing": 1622,
+      "percent": 17.53
+    },
+    "BPX__PEASCCT1": {
+      "missing": 8810,
+      "percent": 95.2
+    },
+    "BPX__BPXCHR": {
+      "missing": 7715,
+      "percent": 83.37
+    },
+    "BPX__BPAARM": {
+      "missing": 2437,
+      "percent": 26.33
+    },
+    "BPX__BPACSZ": {
+      "missing": 2442,
+      "percent": 26.39
+    },
+    "BPX__BPXPLS": {
+      "missing": 2512,
+      "percent": 27.15
+    },
+    "BPX__BPXPULS": {
+      "missing": 973,
+      "percent": 10.51
+    },
+    "BPX__BPXPTY": {
+      "missing": 2512,
+      "percent": 27.15
+    },
+    "BPX__BPXML1": {
+      "missing": 2523,
+      "percent": 27.26
+    },
+    "BPX__BPXSY1": {
+      "missing": 2952,
+      "percent": 31.9
+    },
+    "BPX__BPXDI1": {
+      "missing": 2952,
+      "percent": 31.9
+    },
+    "BPX__BPAEN1": {
+      "missing": 2952,
+      "percent": 31.9
+    },
+    "BPX__BPXSY2": {
+      "missing": 2691,
+      "percent": 29.08
+    },
+    "BPX__BPXDI2": {
+      "missing": 2691,
+      "percent": 29.08
+    },
+    "BPX__BPAEN2": {
+      "missing": 2691,
+      "percent": 29.08
+    },
+    "BPX__BPXSY3": {
+      "missing": 2716,
+      "percent": 29.35
+    },
+    "BPX__BPXDI3": {
+      "missing": 2716,
+      "percent": 29.35
+    },
+    "BPX__BPAEN3": {
+      "missing": 2716,
+      "percent": 29.35
+    },
+    "BPX__BPXSY4": {
+      "missing": 8698,
+      "percent": 93.99
+    },
+    "BPX__BPXDI4": {
+      "missing": 8698,
+      "percent": 93.99
+    },
+    "BPX__BPAEN4": {
+      "missing": 8698,
+      "percent": 93.99
+    },
+    "serum_glucose_mg_dl": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "hba1c_percent": {
+      "missing": 3209,
+      "percent": 34.68
+    },
+    "ferritin_ng_ml": {
+      "missing": 2665,
+      "percent": 28.8
+    },
+    "serum_iron_ug_dl": {
+      "missing": 3352,
+      "percent": 36.22
+    },
+    "serum_creatinine_mg_dl": {
+      "missing": 3351,
+      "percent": 36.21
+    },
+    "bun_mg_dl": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "urine_albumin_ug_ml": {
+      "missing": 1622,
+      "percent": 17.53
+    },
+    "urine_creatinine_mg_dl": {
+      "missing": 1622,
+      "percent": 17.53
+    },
+    "alt_u_l": {
+      "missing": 3352,
+      "percent": 36.22
+    },
+    "ast_u_l": {
+      "missing": 3372,
+      "percent": 36.44
+    },
+    "albumin_g_dl": {
+      "missing": 3349,
+      "percent": 36.19
+    },
+    "total_bilirubin_mg_dl": {
+      "missing": 3351,
+      "percent": 36.21
+    },
+    "alkaline_phosphatase_u_l": {
+      "missing": 3351,
+      "percent": 36.21
+    },
+    "ggt_u_l": {
+      "missing": 3352,
+      "percent": 36.22
+    },
+    "hdl_cholesterol_mg_dl": {
+      "missing": 2516,
+      "percent": 27.19
+    },
+    "total_cholesterol_mg_dl": {
+      "missing": 2516,
+      "percent": 27.19
+    },
+    "triglycerides_mg_dl": {
+      "missing": 6420,
+      "percent": 69.38
+    },
+    "sodium_mmol_l": {
+      "missing": 3350,
+      "percent": 36.2
+    },
+    "potassium_mmol_l": {
+      "missing": 3355,
+      "percent": 36.25
+    },
+    "chloride_mmol_l": {
+      "missing": 3350,
+      "percent": 36.2
+    },
+    "bicarbonate_mmol_l": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "serum_calcium_mg_dl": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "serum_phosphorus_mg_dl": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "total_protein_g_dl": {
+      "missing": 3353,
+      "percent": 36.23
+    },
+    "systolic_bp_mean_mmhg": {
+      "missing": 2537,
+      "percent": 27.42
+    },
+    "systolic_bp_reading_count": {
+      "missing": 0,
+      "percent": 0.0
+    },
+    "diastolic_bp_mean_mmhg": {
+      "missing": 2537,
+      "percent": 27.42
+    },
+    "diastolic_bp_reading_count": {
+      "missing": 0,
+      "percent": 0.0
+    }
+  },
+  "numeric_ranges": {
+    "SEQN": {
+      "min": 93703.0,
+      "max": 102956.0
+    },
+    "DEMO__SDDSRVYR": {
+      "min": 10.0,
+      "max": 10.0
+    },
+    "DEMO__RIDSTATR": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__RIAGENDR": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__RIDAGEYR": {
+      "min": 5.397605346934028e-79,
+      "max": 80.0
+    },
+    "DEMO__RIDAGEMN": {
+      "min": 5.397605346934028e-79,
+      "max": 24.0
+    },
+    "DEMO__RIDRETH1": {
+      "min": 1.0,
+      "max": 5.0
+    },
+    "DEMO__RIDRETH3": {
+      "min": 1.0,
+      "max": 7.0
+    },
+    "DEMO__RIDEXMON": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__RIDEXAGM": {
+      "min": 5.397605346934028e-79,
+      "max": 239.0
+    },
+    "DEMO__DMQMILIZ": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DEMO__DMQADFC": {
+      "min": 1.0,
+      "max": 7.0
+    },
+    "DEMO__DMDBORN4": {
+      "min": 1.0,
+      "max": 99.0
+    },
+    "DEMO__DMDCITZN": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DEMO__DMDYRSUS": {
+      "min": 1.0,
+      "max": 99.0
+    },
+    "DEMO__DMDEDUC3": {
+      "min": 5.397605346934028e-79,
+      "max": 66.0
+    },
+    "DEMO__DMDEDUC2": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DEMO__DMDMARTL": {
+      "min": 1.0,
+      "max": 77.0
+    },
+    "DEMO__RIDEXPRG": {
+      "min": 1.0,
+      "max": 3.0
+    },
+    "DEMO__SIALANG": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__SIAPROXY": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__SIAINTRP": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__FIALANG": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__FIAPROXY": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__FIAINTRP": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__MIALANG": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__MIAPROXY": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__MIAINTRP": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__AIALANGA": {
+      "min": 1.0,
+      "max": 3.0
+    },
+    "DEMO__DMDHHSIZ": {
+      "min": 1.0,
+      "max": 7.0
+    },
+    "DEMO__DMDFMSIZ": {
+      "min": 1.0,
+      "max": 7.0
+    },
+    "DEMO__DMDHHSZA": {
+      "min": 5.397605346934028e-79,
+      "max": 3.0
+    },
+    "DEMO__DMDHHSZB": {
+      "min": 5.397605346934028e-79,
+      "max": 3.0
+    },
+    "DEMO__DMDHHSZE": {
+      "min": 5.397605346934028e-79,
+      "max": 3.0
+    },
+    "DEMO__DMDHRGND": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__DMDHRAGZ": {
+      "min": 1.0,
+      "max": 4.0
+    },
+    "DEMO__DMDHREDZ": {
+      "min": 1.0,
+      "max": 3.0
+    },
+    "DEMO__DMDHRMAZ": {
+      "min": 1.0,
+      "max": 3.0
+    },
+    "DEMO__DMDHSEDZ": {
+      "min": 1.0,
+      "max": 3.0
+    },
+    "DEMO__WTINT2YR": {
+      "min": 2571.068712346633,
+      "max": 433085.0052624958
+    },
+    "DEMO__WTMEC2YR": {
+      "min": 5.397605346934028e-79,
+      "max": 419762.836487576
+    },
+    "DEMO__SDMVPSU": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DEMO__SDMVSTRA": {
+      "min": 134.0,
+      "max": 148.0
+    },
+    "DEMO__INDHHIN2": {
+      "min": 1.0,
+      "max": 99.0
+    },
+    "DEMO__INDFMIN2": {
+      "min": 1.0,
+      "max": 99.0
+    },
+    "DEMO__INDFMPIR": {
+      "min": 5.397605346934028e-79,
+      "max": 5.0
+    },
+    "BMX__BMDSTATS": {
+      "min": 1.0,
+      "max": 4.0
+    },
+    "BMX__BMXWT": {
+      "min": 3.2,
+      "max": 242.6
+    },
+    "BMX__BMIWT": {
+      "min": 1.0,
+      "max": 4.0
+    },
+    "BMX__BMXRECUM": {
+      "min": 49.1,
+      "max": 111.3
+    },
+    "BMX__BMIRECUM": {
+      "min": 1.0,
+      "max": 1.0
+    },
+    "BMX__BMXHEAD": {
+      "min": 32.4,
+      "max": 47.9
+    },
+    "BMX__BMIHEAD": {
+      "min": null,
+      "max": null
+    },
+    "BMX__BMXHT": {
+      "min": 78.3,
+      "max": 197.7
+    },
+    "BMX__BMIHT": {
+      "min": 1.0,
+      "max": 3.0
+    },
+    "BMX__BMXBMI": {
+      "min": 12.3,
+      "max": 86.2
+    },
+    "BMX__BMXLEG": {
+      "min": 24.8,
+      "max": 55.0
+    },
+    "BMX__BMILEG": {
+      "min": 1.0,
+      "max": 1.0
+    },
+    "BMX__BMXARML": {
+      "min": 9.4,
+      "max": 49.9
+    },
+    "BMX__BMIARML": {
+      "min": 1.0,
+      "max": 1.0
+    },
+    "BMX__BMXARMC": {
+      "min": 11.2,
+      "max": 56.3
+    },
+    "BMX__BMIARMC": {
+      "min": 1.0,
+      "max": 1.0
+    },
+    "BMX__BMXWAIST": {
+      "min": 40.0,
+      "max": 169.5
+    },
+    "BMX__BMIWAIST": {
+      "min": 1.0,
+      "max": 1.0
+    },
+    "BMX__BMXHIP": {
+      "min": 66.6,
+      "max": 179.0
+    },
+    "BMX__BMIHIP": {
+      "min": 1.0,
+      "max": 1.0
+    },
+    "DR1__WTDRD1": {
+      "min": 5.397605346934028e-79,
+      "max": 691139.546883
+    },
+    "DR1__WTDR2D": {
+      "min": 5.397605346934028e-79,
+      "max": 901995.118861
+    },
+    "DR1__DR1DRSTZ": {
+      "min": 1.0,
+      "max": 5.0
+    },
+    "DR1__DR1EXMER": {
+      "min": 14.0,
+      "max": 91.0
+    },
+    "DR1__DRABF": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRDINT": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DR1DBIH": {
+      "min": -37.0,
+      "max": 75.0
+    },
+    "DR1__DR1DAY": {
+      "min": 1.0,
+      "max": 7.0
+    },
+    "DR1__DR1LANG": {
+      "min": 1.0,
+      "max": 6.0
+    },
+    "DR1__DR1MRESP": {
+      "min": 1.0,
+      "max": 77.0
+    },
+    "DR1__DR1HELP": {
+      "min": 1.0,
+      "max": 12.0
+    },
+    "DR1__DBQ095Z": {
+      "min": 1.0,
+      "max": 99.0
+    },
+    "DR1__DBD100": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DR1__DRQSPREP": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DR1__DR1STY": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DR1__DR1SKY": {
+      "min": 1.0,
+      "max": 99.0
+    },
+    "DR1__DRQSDIET": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DR1__DRQSDT1": {
+      "min": 1.0,
+      "max": 1.0
+    },
+    "DR1__DRQSDT2": {
+      "min": 2.0,
+      "max": 2.0
+    },
+    "DR1__DRQSDT3": {
+      "min": 3.0,
+      "max": 3.0
+    },
+    "DR1__DRQSDT4": {
+      "min": 4.0,
+      "max": 4.0
+    },
+    "DR1__DRQSDT5": {
+      "min": 5.0,
+      "max": 5.0
+    },
+    "DR1__DRQSDT6": {
+      "min": 6.0,
+      "max": 6.0
+    },
+    "DR1__DRQSDT7": {
+      "min": 7.0,
+      "max": 7.0
+    },
+    "DR1__DRQSDT8": {
+      "min": 8.0,
+      "max": 8.0
+    },
+    "DR1__DRQSDT9": {
+      "min": 9.0,
+      "max": 9.0
+    },
+    "DR1__DRQSDT10": {
+      "min": 10.0,
+      "max": 10.0
+    },
+    "DR1__DRQSDT11": {
+      "min": 11.0,
+      "max": 11.0
+    },
+    "DR1__DRQSDT12": {
+      "min": 12.0,
+      "max": 12.0
+    },
+    "DR1__DRQSDT91": {
+      "min": 91.0,
+      "max": 91.0
+    },
+    "DR1__DR1TNUMF": {
+      "min": 5.397605346934028e-79,
+      "max": 46.0
+    },
+    "DR1__DR1TKCAL": {
+      "min": 5.397605346934028e-79,
+      "max": 12501.0
+    },
+    "DR1__DR1TPROT": {
+      "min": 5.397605346934028e-79,
+      "max": 545.2
+    },
+    "DR1__DR1TCARB": {
+      "min": 5.397605346934028e-79,
+      "max": 1476.7599999999998
+    },
+    "DR1__DR1TSUGR": {
+      "min": 5.397605346934028e-79,
+      "max": 931.1600000000002
+    },
+    "DR1__DR1TFIBE": {
+      "min": 5.397605346934028e-79,
+      "max": 107.8
+    },
+    "DR1__DR1TTFAT": {
+      "min": 5.397605346934028e-79,
+      "max": 567.9599999999999
+    },
+    "DR1__DR1TSFAT": {
+      "min": 5.397605346934028e-79,
+      "max": 195.852
+    },
+    "DR1__DR1TMFAT": {
+      "min": 5.397605346934028e-79,
+      "max": 200.097
+    },
+    "DR1__DR1TPFAT": {
+      "min": 5.397605346934028e-79,
+      "max": 200.697
+    },
+    "DR1__DR1TCHOL": {
+      "min": 5.397605346934028e-79,
+      "max": 2403.0
+    },
+    "DR1__DR1TATOC": {
+      "min": 5.397605346934028e-79,
+      "max": 138.54999999999998
+    },
+    "DR1__DR1TATOA": {
+      "min": 5.397605346934028e-79,
+      "max": 66.2
+    },
+    "DR1__DR1TRET": {
+      "min": 5.397605346934028e-79,
+      "max": 6746.0
+    },
+    "DR1__DR1TVARA": {
+      "min": 5.397605346934028e-79,
+      "max": 6785.0
+    },
+    "DR1__DR1TACAR": {
+      "min": 5.397605346934028e-79,
+      "max": 19362.0
+    },
+    "DR1__DR1TBCAR": {
+      "min": 5.397605346934028e-79,
+      "max": 71772.0
+    },
+    "DR1__DR1TCRYP": {
+      "min": 5.397605346934028e-79,
+      "max": 7381.0
+    },
+    "DR1__DR1TLYCO": {
+      "min": 5.397605346934028e-79,
+      "max": 164033.0
+    },
+    "DR1__DR1TLZ": {
+      "min": 5.397605346934028e-79,
+      "max": 74345.0
+    },
+    "DR1__DR1TVB1": {
+      "min": 5.397605346934028e-79,
+      "max": 9.996
+    },
+    "DR1__DR1TVB2": {
+      "min": 5.397605346934028e-79,
+      "max": 18.534000000000006
+    },
+    "DR1__DR1TNIAC": {
+      "min": 5.397605346934028e-79,
+      "max": 238.45700000000002
+    },
+    "DR1__DR1TVB6": {
+      "min": 5.397605346934028e-79,
+      "max": 44.751
+    },
+    "DR1__DR1TFOLA": {
+      "min": 5.397605346934028e-79,
+      "max": 3752.0
+    },
+    "DR1__DR1TFA": {
+      "min": 5.397605346934028e-79,
+      "max": 3522.0
+    },
+    "DR1__DR1TFF": {
+      "min": 5.397605346934028e-79,
+      "max": 1376.0
+    },
+    "DR1__DR1TFDFE": {
+      "min": 5.397605346934028e-79,
+      "max": 6218.0
+    },
+    "DR1__DR1TCHL": {
+      "min": 5.397605346934028e-79,
+      "max": 2749.5999999999995
+    },
+    "DR1__DR1TVB12": {
+      "min": 5.397605346934028e-79,
+      "max": 248.70999999999998
+    },
+    "DR1__DR1TB12A": {
+      "min": 5.397605346934028e-79,
+      "max": 50.98
+    },
+    "DR1__DR1TVC": {
+      "min": 5.397605346934028e-79,
+      "max": 1977.4000000000003
+    },
+    "DR1__DR1TVD": {
+      "min": 5.397605346934028e-79,
+      "max": 105.7
+    },
+    "DR1__DR1TVK": {
+      "min": 5.397605346934028e-79,
+      "max": 2702.4
+    },
+    "DR1__DR1TCALC": {
+      "min": 5.397605346934028e-79,
+      "max": 7038.0
+    },
+    "DR1__DR1TPHOS": {
+      "min": 5.397605346934028e-79,
+      "max": 7373.0
+    },
+    "DR1__DR1TMAGN": {
+      "min": 5.397605346934028e-79,
+      "max": 1506.0
+    },
+    "DR1__DR1TIRON": {
+      "min": 5.397605346934028e-79,
+      "max": 111.03999999999999
+    },
+    "DR1__DR1TZINC": {
+      "min": 5.397605346934028e-79,
+      "max": 477.53
+    },
+    "DR1__DR1TCOPP": {
+      "min": 5.397605346934028e-79,
+      "max": 36.816
+    },
+    "DR1__DR1TSODI": {
+      "min": 5.397605346934028e-79,
+      "max": 25949.0
+    },
+    "DR1__DR1TPOTA": {
+      "min": 5.397605346934028e-79,
+      "max": 14358.0
+    },
+    "DR1__DR1TSELE": {
+      "min": 5.397605346934028e-79,
+      "max": 2604.9
+    },
+    "DR1__DR1TCAFF": {
+      "min": 5.397605346934028e-79,
+      "max": 4320.0
+    },
+    "DR1__DR1TTHEO": {
+      "min": 5.397605346934028e-79,
+      "max": 1188.0
+    },
+    "DR1__DR1TALCO": {
+      "min": 5.397605346934028e-79,
+      "max": 406.80000000000007
+    },
+    "DR1__DR1TMOIS": {
+      "min": 5.397605346934028e-79,
+      "max": 16669.51
+    },
+    "DR1__DR1TS040": {
+      "min": 5.397605346934028e-79,
+      "max": 7.843
+    },
+    "DR1__DR1TS060": {
+      "min": 5.397605346934028e-79,
+      "max": 4.99
+    },
+    "DR1__DR1TS080": {
+      "min": 5.397605346934028e-79,
+      "max": 16.416
+    },
+    "DR1__DR1TS100": {
+      "min": 5.397605346934028e-79,
+      "max": 9.104999999999999
+    },
+    "DR1__DR1TS120": {
+      "min": 5.397605346934028e-79,
+      "max": 42.181
+    },
+    "DR1__DR1TS140": {
+      "min": 5.397605346934028e-79,
+      "max": 19.808
+    },
+    "DR1__DR1TS160": {
+      "min": 5.397605346934028e-79,
+      "max": 126.86100000000002
+    },
+    "DR1__DR1TS180": {
+      "min": 5.397605346934028e-79,
+      "max": 47.04899999999999
+    },
+    "DR1__DR1TM161": {
+      "min": 5.397605346934028e-79,
+      "max": 19.512000000000004
+    },
+    "DR1__DR1TM181": {
+      "min": 5.397605346934028e-79,
+      "max": 184.586
+    },
+    "DR1__DR1TM201": {
+      "min": 5.397605346934028e-79,
+      "max": 5.558
+    },
+    "DR1__DR1TM221": {
+      "min": 5.397605346934028e-79,
+      "max": 3.038
+    },
+    "DR1__DR1TP182": {
+      "min": 5.397605346934028e-79,
+      "max": 195.38699999999997
+    },
+    "DR1__DR1TP183": {
+      "min": 5.397605346934028e-79,
+      "max": 15.647
+    },
+    "DR1__DR1TP184": {
+      "min": 5.397605346934028e-79,
+      "max": 0.889
+    },
+    "DR1__DR1TP204": {
+      "min": 5.397605346934028e-79,
+      "max": 1.73
+    },
+    "DR1__DR1TP205": {
+      "min": 5.397605346934028e-79,
+      "max": 3.713
+    },
+    "DR1__DR1TP225": {
+      "min": 5.397605346934028e-79,
+      "max": 2.176
+    },
+    "DR1__DR1TP226": {
+      "min": 5.397605346934028e-79,
+      "max": 8.716999999999999
+    },
+    "DR1__DR1_300": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DR1__DR1_320Z": {
+      "min": 5.397605346934028e-79,
+      "max": 15360.0
+    },
+    "DR1__DR1_330Z": {
+      "min": 5.397605346934028e-79,
+      "max": 15360.0
+    },
+    "DR1__DR1BWATZ": {
+      "min": 5.397605346934028e-79,
+      "max": 10800.0
+    },
+    "DR1__DR1TWSZ": {
+      "min": 1.0,
+      "max": 99.0
+    },
+    "DR1__DRD340": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DR1__DRD350A": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD350AQ": {
+      "min": 1.0,
+      "max": 24.0
+    },
+    "DR1__DRD350B": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD350BQ": {
+      "min": 1.0,
+      "max": 10.0
+    },
+    "DR1__DRD350C": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD350CQ": {
+      "min": 1.0,
+      "max": 30.0
+    },
+    "DR1__DRD350D": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD350DQ": {
+      "min": 1.0,
+      "max": 10.0
+    },
+    "DR1__DRD350E": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD350EQ": {
+      "min": 1.0,
+      "max": 7.0
+    },
+    "DR1__DRD350F": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD350FQ": {
+      "min": 1.0,
+      "max": 30.0
+    },
+    "DR1__DRD350G": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD350GQ": {
+      "min": 1.0,
+      "max": 10.0
+    },
+    "DR1__DRD350H": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD350HQ": {
+      "min": 1.0,
+      "max": 40.0
+    },
+    "DR1__DRD350I": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD350IQ": {
+      "min": 1.0,
+      "max": 10.0
+    },
+    "DR1__DRD350J": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD350JQ": {
+      "min": 1.0,
+      "max": 12.0
+    },
+    "DR1__DRD350K": {
+      "min": 2.0,
+      "max": 2.0
+    },
+    "DR1__DRD360": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DR1__DRD370A": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370AQ": {
+      "min": 1.0,
+      "max": 27.0
+    },
+    "DR1__DRD370B": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370BQ": {
+      "min": 1.0,
+      "max": 30.0
+    },
+    "DR1__DRD370C": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370CQ": {
+      "min": 1.0,
+      "max": 16.0
+    },
+    "DR1__DRD370D": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370DQ": {
+      "min": 1.0,
+      "max": 30.0
+    },
+    "DR1__DRD370E": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370EQ": {
+      "min": 1.0,
+      "max": 30.0
+    },
+    "DR1__DRD370F": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370FQ": {
+      "min": 1.0,
+      "max": 20.0
+    },
+    "DR1__DRD370G": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370GQ": {
+      "min": 1.0,
+      "max": 8.0
+    },
+    "DR1__DRD370H": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370HQ": {
+      "min": 1.0,
+      "max": 30.0
+    },
+    "DR1__DRD370I": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370IQ": {
+      "min": 1.0,
+      "max": 10.0
+    },
+    "DR1__DRD370J": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370JQ": {
+      "min": 1.0,
+      "max": 5.0
+    },
+    "DR1__DRD370K": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370KQ": {
+      "min": 1.0,
+      "max": 6.0
+    },
+    "DR1__DRD370L": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370LQ": {
+      "min": 1.0,
+      "max": 12.0
+    },
+    "DR1__DRD370M": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370MQ": {
+      "min": 1.0,
+      "max": 25.0
+    },
+    "DR1__DRD370N": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370NQ": {
+      "min": 1.0,
+      "max": 24.0
+    },
+    "DR1__DRD370O": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370OQ": {
+      "min": 1.0,
+      "max": 30.0
+    },
+    "DR1__DRD370P": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370PQ": {
+      "min": 1.0,
+      "max": 8.0
+    },
+    "DR1__DRD370Q": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370QQ": {
+      "min": 1.0,
+      "max": 20.0
+    },
+    "DR1__DRD370R": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370RQ": {
+      "min": 1.0,
+      "max": 10.0
+    },
+    "DR1__DRD370S": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370SQ": {
+      "min": 1.0,
+      "max": 5.0
+    },
+    "DR1__DRD370T": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370TQ": {
+      "min": 1.0,
+      "max": 30.0
+    },
+    "DR1__DRD370U": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR1__DRD370UQ": {
+      "min": 1.0,
+      "max": 17.0
+    },
+    "DR1__DRD370V": {
+      "min": 2.0,
+      "max": 2.0
+    },
+    "DR2__WTDRD1": {
+      "min": 5.397605346934028e-79,
+      "max": 691139.546883
+    },
+    "DR2__WTDR2D": {
+      "min": 5.397605346934028e-79,
+      "max": 901995.118861
+    },
+    "DR2__DR2DRSTZ": {
+      "min": 1.0,
+      "max": 5.0
+    },
+    "DR2__DR2EXMER": {
+      "min": 32.0,
+      "max": 91.0
+    },
+    "DR2__DRABF": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR2__DRDINT": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DR2__DR2DBIH": {
+      "min": -33.0,
+      "max": 137.0
+    },
+    "DR2__DR2DAY": {
+      "min": 1.0,
+      "max": 7.0
+    },
+    "DR2__DR2LANG": {
+      "min": 1.0,
+      "max": 5.0
+    },
+    "DR2__DR2MRESP": {
+      "min": 1.0,
+      "max": 99.0
+    },
+    "DR2__DR2HELP": {
+      "min": 1.0,
+      "max": 12.0
+    },
+    "DR2__DR2TNUMF": {
+      "min": 1.0,
+      "max": 39.0
+    },
+    "DR2__DR2STY": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DR2__DR2SKY": {
+      "min": 1.0,
+      "max": 99.0
+    },
+    "DR2__DR2TKCAL": {
+      "min": 5.397605346934028e-79,
+      "max": 11241.0
+    },
+    "DR2__DR2TPROT": {
+      "min": 5.397605346934028e-79,
+      "max": 345.53
+    },
+    "DR2__DR2TCARB": {
+      "min": 5.397605346934028e-79,
+      "max": 1455.45
+    },
+    "DR2__DR2TSUGR": {
+      "min": 5.397605346934028e-79,
+      "max": 903.1999999999999
+    },
+    "DR2__DR2TFIBE": {
+      "min": 5.397605346934028e-79,
+      "max": 103.99999999999999
+    },
+    "DR2__DR2TTFAT": {
+      "min": 5.397605346934028e-79,
+      "max": 487.73
+    },
+    "DR2__DR2TSFAT": {
+      "min": 5.397605346934028e-79,
+      "max": 160.67299999999997
+    },
+    "DR2__DR2TMFAT": {
+      "min": 5.397605346934028e-79,
+      "max": 174.37699999999998
+    },
+    "DR2__DR2TPFAT": {
+      "min": 5.397605346934028e-79,
+      "max": 129.181
+    },
+    "DR2__DR2TCHOL": {
+      "min": 5.397605346934028e-79,
+      "max": 2483.0
+    },
+    "DR2__DR2TATOC": {
+      "min": 5.397605346934028e-79,
+      "max": 77.35999999999999
+    },
+    "DR2__DR2TATOA": {
+      "min": 5.397605346934028e-79,
+      "max": 70.38000000000001
+    },
+    "DR2__DR2TRET": {
+      "min": 5.397605346934028e-79,
+      "max": 14573.0
+    },
+    "DR2__DR2TVARA": {
+      "min": 5.397605346934028e-79,
+      "max": 20875.0
+    },
+    "DR2__DR2TACAR": {
+      "min": 5.397605346934028e-79,
+      "max": 93941.0
+    },
+    "DR2__DR2TBCAR": {
+      "min": 5.397605346934028e-79,
+      "max": 201990.0
+    },
+    "DR2__DR2TCRYP": {
+      "min": 5.397605346934028e-79,
+      "max": 7814.0
+    },
+    "DR2__DR2TLYCO": {
+      "min": 5.397605346934028e-79,
+      "max": 147094.0
+    },
+    "DR2__DR2TLZ": {
+      "min": 5.397605346934028e-79,
+      "max": 80214.0
+    },
+    "DR2__DR2TVB1": {
+      "min": 5.397605346934028e-79,
+      "max": 13.241000000000001
+    },
+    "DR2__DR2TVB2": {
+      "min": 5.397605346934028e-79,
+      "max": 17.474999999999998
+    },
+    "DR2__DR2TNIAC": {
+      "min": 5.397605346934028e-79,
+      "max": 219.356
+    },
+    "DR2__DR2TVB6": {
+      "min": 5.397605346934028e-79,
+      "max": 24.987999999999996
+    },
+    "DR2__DR2TFOLA": {
+      "min": 5.397605346934028e-79,
+      "max": 3016.0
+    },
+    "DR2__DR2TFA": {
+      "min": 5.397605346934028e-79,
+      "max": 2907.0
+    },
+    "DR2__DR2TFF": {
+      "min": 5.397605346934028e-79,
+      "max": 1829.0
+    },
+    "DR2__DR2TFDFE": {
+      "min": 5.397605346934028e-79,
+      "max": 5049.0
+    },
+    "DR2__DR2TCHL": {
+      "min": 5.397605346934028e-79,
+      "max": 1664.2
+    },
+    "DR2__DR2TVB12": {
+      "min": 5.397605346934028e-79,
+      "max": 156.26999999999998
+    },
+    "DR2__DR2TB12A": {
+      "min": 5.397605346934028e-79,
+      "max": 51.0
+    },
+    "DR2__DR2TVC": {
+      "min": 5.397605346934028e-79,
+      "max": 1035.3000000000002
+    },
+    "DR2__DR2TVD": {
+      "min": 5.397605346934028e-79,
+      "max": 92.1
+    },
+    "DR2__DR2TVK": {
+      "min": 5.397605346934028e-79,
+      "max": 2930.5
+    },
+    "DR2__DR2TCALC": {
+      "min": 9.0,
+      "max": 7510.0
+    },
+    "DR2__DR2TPHOS": {
+      "min": 5.397605346934028e-79,
+      "max": 7168.0
+    },
+    "DR2__DR2TMAGN": {
+      "min": 3.0,
+      "max": 1445.0
+    },
+    "DR2__DR2TIRON": {
+      "min": 5.397605346934028e-79,
+      "max": 80.81
+    },
+    "DR2__DR2TZINC": {
+      "min": 5.397605346934028e-79,
+      "max": 97.48
+    },
+    "DR2__DR2TCOPP": {
+      "min": 0.03,
+      "max": 28.065
+    },
+    "DR2__DR2TSODI": {
+      "min": 7.0,
+      "max": 16552.0
+    },
+    "DR2__DR2TPOTA": {
+      "min": 5.397605346934028e-79,
+      "max": 12851.0
+    },
+    "DR2__DR2TSELE": {
+      "min": 5.397605346934028e-79,
+      "max": 589.5
+    },
+    "DR2__DR2TCAFF": {
+      "min": 5.397605346934028e-79,
+      "max": 5040.0
+    },
+    "DR2__DR2TTHEO": {
+      "min": 5.397605346934028e-79,
+      "max": 990.0
+    },
+    "DR2__DR2TALCO": {
+      "min": 5.397605346934028e-79,
+      "max": 443.5
+    },
+    "DR2__DR2TMOIS": {
+      "min": 67.59,
+      "max": 12661.8
+    },
+    "DR2__DR2TS040": {
+      "min": 5.397605346934028e-79,
+      "max": 5.731999999999999
+    },
+    "DR2__DR2TS060": {
+      "min": 5.397605346934028e-79,
+      "max": 3.8000000000000003
+    },
+    "DR2__DR2TS080": {
+      "min": 5.397605346934028e-79,
+      "max": 14.244000000000002
+    },
+    "DR2__DR2TS100": {
+      "min": 5.397605346934028e-79,
+      "max": 7.896
+    },
+    "DR2__DR2TS120": {
+      "min": 5.397605346934028e-79,
+      "max": 21.606
+    },
+    "DR2__DR2TS140": {
+      "min": 5.397605346934028e-79,
+      "max": 21.835
+    },
+    "DR2__DR2TS160": {
+      "min": 5.397605346934028e-79,
+      "max": 85.19100000000002
+    },
+    "DR2__DR2TS180": {
+      "min": 5.397605346934028e-79,
+      "max": 40.746
+    },
+    "DR2__DR2TM161": {
+      "min": 5.397605346934028e-79,
+      "max": 10.063999999999997
+    },
+    "DR2__DR2TM181": {
+      "min": 5.397605346934028e-79,
+      "max": 165.881
+    },
+    "DR2__DR2TM201": {
+      "min": 5.397605346934028e-79,
+      "max": 4.629
+    },
+    "DR2__DR2TM221": {
+      "min": 5.397605346934028e-79,
+      "max": 6.104
+    },
+    "DR2__DR2TP182": {
+      "min": 5.397605346934028e-79,
+      "max": 106.441
+    },
+    "DR2__DR2TP183": {
+      "min": 5.397605346934028e-79,
+      "max": 23.393
+    },
+    "DR2__DR2TP184": {
+      "min": 5.397605346934028e-79,
+      "max": 1.258
+    },
+    "DR2__DR2TP204": {
+      "min": 5.397605346934028e-79,
+      "max": 1.3259999999999998
+    },
+    "DR2__DR2TP205": {
+      "min": 5.397605346934028e-79,
+      "max": 4.263
+    },
+    "DR2__DR2TP225": {
+      "min": 5.397605346934028e-79,
+      "max": 1.041
+    },
+    "DR2__DR2TP226": {
+      "min": 5.397605346934028e-79,
+      "max": 6.934
+    },
+    "DR2__DR2_300": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DR2__DR2_320Z": {
+      "min": 5.397605346934028e-79,
+      "max": 11835.0
+    },
+    "DR2__DR2_330Z": {
+      "min": 5.397605346934028e-79,
+      "max": 11835.0
+    },
+    "DR2__DR2BWATZ": {
+      "min": 5.397605346934028e-79,
+      "max": 8400.0
+    },
+    "DR2__DR2TWSZ": {
+      "min": 1.0,
+      "max": 99.0
+    },
+    "CBC__LBXWBCSI": {
+      "min": 1.9,
+      "max": 400.0
+    },
+    "CBC__LBXLYPCT": {
+      "min": 4.4,
+      "max": 89.7
+    },
+    "CBC__LBXMOPCT": {
+      "min": 0.7,
+      "max": 57.2
+    },
+    "CBC__LBXNEPCT": {
+      "min": 8.4,
+      "max": 92.8
+    },
+    "CBC__LBXEOPCT": {
+      "min": 5.397605346934028e-79,
+      "max": 29.1
+    },
+    "CBC__LBXBAPCT": {
+      "min": 0.1,
+      "max": 4.8
+    },
+    "CBC__LBDLYMNO": {
+      "min": 0.4,
+      "max": 358.8
+    },
+    "CBC__LBDMONO": {
+      "min": 0.1,
+      "max": 6.7
+    },
+    "CBC__LBDNENO": {
+      "min": 0.4,
+      "max": 35.2
+    },
+    "CBC__LBDEONO": {
+      "min": 5.397605346934028e-79,
+      "max": 3.2
+    },
+    "CBC__LBDBANO": {
+      "min": 5.397605346934028e-79,
+      "max": 0.5
+    },
+    "CBC__LBXRBCSI": {
+      "min": 2.32,
+      "max": 7.84
+    },
+    "CBC__LBXHGB": {
+      "min": 6.4,
+      "max": 19.9
+    },
+    "CBC__LBXHCT": {
+      "min": 23.0,
+      "max": 58.8
+    },
+    "CBC__LBXMCVSI": {
+      "min": 35.4,
+      "max": 114.6
+    },
+    "CBC__LBXMCHSI": {
+      "min": 12.4,
+      "max": 39.2
+    },
+    "CBC__LBXMC": {
+      "min": 25.2,
+      "max": 38.3
+    },
+    "CBC__LBXRDW": {
+      "min": 11.3,
+      "max": 29.2
+    },
+    "CBC__LBXPLTSI": {
+      "min": 8.0,
+      "max": 818.0
+    },
+    "CBC__LBXMPSI": {
+      "min": 5.4,
+      "max": 13.0
+    },
+    "CBC__LBXNRBC": {
+      "min": 5.397605346934028e-79,
+      "max": 2.0
+    },
+    "VID__LBXVIDMS": {
+      "min": 9.96,
+      "max": 422.0
+    },
+    "VID__LBDVIDLC": {
+      "min": 5.397605346934028e-79,
+      "max": 5.397605346934028e-79
+    },
+    "VID__LBXVD2MS": {
+      "min": 1.45,
+      "max": 203.0
+    },
+    "VID__LBDVD2LC": {
+      "min": 5.397605346934028e-79,
+      "max": 1.0
+    },
+    "VID__LBXVD3MS": {
+      "min": 6.2,
+      "max": 421.0
+    },
+    "VID__LBDVD3LC": {
+      "min": 5.397605346934028e-79,
+      "max": 5.397605346934028e-79
+    },
+    "VID__LBXVE3MS": {
+      "min": 1.16,
+      "max": 37.7
+    },
+    "VID__LBDVE3LC": {
+      "min": 5.397605346934028e-79,
+      "max": 1.0
+    },
+    "WHQ__WHD010": {
+      "min": 49.0,
+      "max": 9999.0
+    },
+    "WHQ__WHD020": {
+      "min": 72.0,
+      "max": 9999.0
+    },
+    "WHQ__WHQ030": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "WHQ__WHQ040": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "WHQ__WHD050": {
+      "min": 67.0,
+      "max": 9999.0
+    },
+    "WHQ__WHQ060": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "WHQ__WHQ070": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "WHQ__WHD080A": {
+      "min": 10.0,
+      "max": 10.0
+    },
+    "WHQ__WHD080B": {
+      "min": 11.0,
+      "max": 11.0
+    },
+    "WHQ__WHD080C": {
+      "min": 12.0,
+      "max": 12.0
+    },
+    "WHQ__WHD080D": {
+      "min": 13.0,
+      "max": 13.0
+    },
+    "WHQ__WHD080E": {
+      "min": 14.0,
+      "max": 14.0
+    },
+    "WHQ__WHD080F": {
+      "min": 15.0,
+      "max": 15.0
+    },
+    "WHQ__WHD080G": {
+      "min": 16.0,
+      "max": 16.0
+    },
+    "WHQ__WHD080H": {
+      "min": 17.0,
+      "max": 17.0
+    },
+    "WHQ__WHD080I": {
+      "min": 31.0,
+      "max": 31.0
+    },
+    "WHQ__WHD080J": {
+      "min": 32.0,
+      "max": 32.0
+    },
+    "WHQ__WHD080K": {
+      "min": 33.0,
+      "max": 33.0
+    },
+    "WHQ__WHD080M": {
+      "min": 34.0,
+      "max": 34.0
+    },
+    "WHQ__WHD080N": {
+      "min": 30.0,
+      "max": 30.0
+    },
+    "WHQ__WHD080O": {
+      "min": 41.0,
+      "max": 41.0
+    },
+    "WHQ__WHD080P": {
+      "min": 42.0,
+      "max": 42.0
+    },
+    "WHQ__WHD080Q": {
+      "min": 43.0,
+      "max": 43.0
+    },
+    "WHQ__WHD080R": {
+      "min": 44.0,
+      "max": 44.0
+    },
+    "WHQ__WHD080S": {
+      "min": 45.0,
+      "max": 45.0
+    },
+    "WHQ__WHD080T": {
+      "min": 46.0,
+      "max": 46.0
+    },
+    "WHQ__WHD080U": {
+      "min": 35.0,
+      "max": 35.0
+    },
+    "WHQ__WHD080L": {
+      "min": 40.0,
+      "max": 40.0
+    },
+    "WHQ__WHQ225": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "WHQ__WHD110": {
+      "min": 72.0,
+      "max": 9999.0
+    },
+    "WHQ__WHD120": {
+      "min": 70.0,
+      "max": 9999.0
+    },
+    "WHQ__WHD130": {
+      "min": 41.0,
+      "max": 9999.0
+    },
+    "WHQ__WHD140": {
+      "min": 90.0,
+      "max": 9999.0
+    },
+    "WHQ__WHQ150": {
+      "min": 10.0,
+      "max": 99999.0
+    },
+    "WHQ__WHQ190": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "WHQ__WHQ200": {
+      "min": 21.0,
+      "max": 99999.0
+    },
+    "DS1__WTDRD1": {
+      "min": 5.397605346934028e-79,
+      "max": 691139.546883
+    },
+    "DS1__WTDR2D": {
+      "min": 5.397605346934028e-79,
+      "max": 901995.118861
+    },
+    "DS1__DR1DRSTZ": {
+      "min": 1.0,
+      "max": 5.0
+    },
+    "DS1__DR1EXMER": {
+      "min": 14.0,
+      "max": 91.0
+    },
+    "DS1__DRDINT": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DS1__DR1DBIH": {
+      "min": -37.0,
+      "max": 75.0
+    },
+    "DS1__DR1DAY": {
+      "min": 1.0,
+      "max": 7.0
+    },
+    "DS1__DR1LANG": {
+      "min": 1.0,
+      "max": 6.0
+    },
+    "DS1__DR1MRESP": {
+      "min": 1.0,
+      "max": 77.0
+    },
+    "DS1__DR1HELP": {
+      "min": 1.0,
+      "max": 12.0
+    },
+    "DS1__DS1DSCNT": {
+      "min": 5.397605346934028e-79,
+      "max": 19.0
+    },
+    "DS1__DS1DS": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DS1__DS1ANCNT": {
+      "min": 5.397605346934028e-79,
+      "max": 2.0
+    },
+    "DS1__DS1AN": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "DS1__DS1TKCAL": {
+      "min": 1.0,
+      "max": 243.0
+    },
+    "DS1__DS1TPROT": {
+      "min": 0.05,
+      "max": 30.0
+    },
+    "DS1__DS1TCARB": {
+      "min": 0.001,
+      "max": 63.0
+    },
+    "DS1__DS1TSUGR": {
+      "min": 0.3,
+      "max": 36.0
+    },
+    "DS1__DS1TFIBE": {
+      "min": 0.25,
+      "max": 27.0
+    },
+    "DS1__DS1TTFAT": {
+      "min": 0.25,
+      "max": 27.0
+    },
+    "DS1__DS1TSFAT": {
+      "min": 0.0002,
+      "max": 6.0
+    },
+    "DS1__DS1TMFAT": {
+      "min": 0.17,
+      "max": 6.0
+    },
+    "DS1__DS1TPFAT": {
+      "min": 0.25,
+      "max": 12.0
+    },
+    "DS1__DS1TCHOL": {
+      "min": 1.0,
+      "max": 150.0
+    },
+    "DS1__DS1TLYCO": {
+      "min": 99.0,
+      "max": 60000.0
+    },
+    "DS1__DS1TLZ": {
+      "min": 3.0,
+      "max": 71000.0
+    },
+    "DS1__DS1TVB1": {
+      "min": 0.01,
+      "max": 251.5
+    },
+    "DS1__DS1TVB2": {
+      "min": 0.04,
+      "max": 401.7
+    },
+    "DS1__DS1TNIAC": {
+      "min": 0.3,
+      "max": 1520.0
+    },
+    "DS1__DS1TVB6": {
+      "min": 0.03,
+      "max": 500.0
+    },
+    "DS1__DS1TVB12": {
+      "min": 0.6,
+      "max": 10165.0
+    },
+    "DS1__DS1TFA": {
+      "min": 4.0,
+      "max": 10000.0
+    },
+    "DS1__DS1TFDFE": {
+      "min": 7.0,
+      "max": 17000.0
+    },
+    "DS1__DS1TCHL": {
+      "min": 0.005,
+      "max": 1010.0
+    },
+    "DS1__DS1TVC": {
+      "min": 2.0,
+      "max": 10552.0
+    },
+    "DS1__DS1TVK": {
+      "min": 5.0,
+      "max": 5000.0
+    },
+    "DS1__DS1TVD": {
+      "min": 0.63,
+      "max": 2570.0
+    },
+    "DS1__DS1TCALC": {
+      "min": 2.0,
+      "max": 4202.0
+    },
+    "DS1__DS1TPHOS": {
+      "min": 6.0,
+      "max": 420.0
+    },
+    "DS1__DS1TMAGN": {
+      "min": 0.1,
+      "max": 2000.0
+    },
+    "DS1__DS1TIRON": {
+      "min": 0.08,
+      "max": 202.5
+    },
+    "DS1__DS1TZINC": {
+      "min": 1e-05,
+      "max": 102.475
+    },
+    "DS1__DS1TCOPP": {
+      "min": 0.004,
+      "max": 8.8
+    },
+    "DS1__DS1TSODI": {
+      "min": 2.0,
+      "max": 510.0
+    },
+    "DS1__DS1TPOTA": {
+      "min": 0.01,
+      "max": 2340.0
+    },
+    "DS1__DS1TSELE": {
+      "min": 1.0,
+      "max": 470.0
+    },
+    "DS1__DS1TCAFF": {
+      "min": 20.0,
+      "max": 1200.0
+    },
+    "DS1__DS1TIODI": {
+      "min": 0.15,
+      "max": 12500.0
+    },
+    "DSQ__DSDCOUNT": {
+      "min": 5.397605346934028e-79,
+      "max": 99.0
+    },
+    "DSQ__DSDANCNT": {
+      "min": 5.397605346934028e-79,
+      "max": 99.0
+    },
+    "DSQ__DSD010": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DSQ__DSD010AN": {
+      "min": 1.0,
+      "max": 9.0
+    },
+    "DSQ__DSQTKCAL": {
+      "min": 0.1,
+      "max": 425.0
+    },
+    "DSQ__DSQTPROT": {
+      "min": 0.002,
+      "max": 60.0
+    },
+    "DSQ__DSQTCARB": {
+      "min": 0.002,
+      "max": 42.0
+    },
+    "DSQ__DSQTSUGR": {
+      "min": 0.02,
+      "max": 24.0
+    },
+    "DSQ__DSQTFIBE": {
+      "min": 0.04,
+      "max": 26.0
+    },
+    "DSQ__DSQTTFAT": {
+      "min": 0.004,
+      "max": 27.0
+    },
+    "DSQ__DSQTSFAT": {
+      "min": 0.0001,
+      "max": 6.0
+    },
+    "DSQ__DSQTMFAT": {
+      "min": 0.01,
+      "max": 6.0
+    },
+    "DSQ__DSQTPFAT": {
+      "min": 0.01,
+      "max": 12.0
+    },
+    "DSQ__DSQTCHOL": {
+      "min": 0.13,
+      "max": 250.0
+    },
+    "DSQ__DSQTLYCO": {
+      "min": 8.0,
+      "max": 30000.0
+    },
+    "DSQ__DSQTLZ": {
+      "min": 2.0,
+      "max": 48000.0
+    },
+    "DSQ__DSQTVB1": {
+      "min": 0.001,
+      "max": 251.5
+    },
+    "DSQ__DSQTVB2": {
+      "min": 0.001,
+      "max": 401.7
+    },
+    "DSQ__DSQTNIAC": {
+      "min": 0.1,
+      "max": 1520.0
+    },
+    "DSQ__DSQTVB6": {
+      "min": 0.02,
+      "max": 500.0
+    },
+    "DSQ__DSQTFA": {
+      "min": 1.0,
+      "max": 16000.0
+    },
+    "DSQ__DSQTFDFE": {
+      "min": 2.0,
+      "max": 27200.0
+    },
+    "DSQ__DSQTCHL": {
+      "min": 0.0003,
+      "max": 666.6667
+    },
+    "DSQ__DSQTVB12": {
+      "min": 0.04,
+      "max": 10000.0
+    },
+    "DSQ__DSQTVC": {
+      "min": 0.33,
+      "max": 30000.0
+    },
+    "DSQ__DSQTVK": {
+      "min": 0.1,
+      "max": 7000.0
+    },
+    "DSQ__DSQTVD": {
+      "min": 0.004,
+      "max": 2570.0
+    },
+    "DSQ__DSQTCALC": {
+      "min": 0.18,
+      "max": 3750.0
+    },
+    "DSQ__DSQTPHOS": {
+      "min": 0.67,
+      "max": 1200.0
+    },
+    "DSQ__DSQTMAGN": {
+      "min": 0.08,
+      "max": 3390.0
+    },
+    "DSQ__DSQTIRON": {
+      "min": 0.002,
+      "max": 260.0
+    },
+    "DSQ__DSQTZINC": {
+      "min": 0.0001,
+      "max": 450.0
+    },
+    "DSQ__DSQTCOPP": {
+      "min": 0.0002,
+      "max": 6.1
+    },
+    "DSQ__DSQTSODI": {
+      "min": 0.1,
+      "max": 1500.0
+    },
+    "DSQ__DSQTPOTA": {
+      "min": 0.01,
+      "max": 6750.0
+    },
+    "DSQ__DSQTSELE": {
+      "min": 0.02,
+      "max": 2100.0
+    },
+    "DSQ__DSQTCAFF": {
+      "min": 2.0,
+      "max": 1200.0
+    },
+    "DSQ__DSQTIODI": {
+      "min": 0.5,
+      "max": 12500.0
+    },
+    "age_years": {
+      "min": 5.397605346934028e-79,
+      "max": 80.0
+    },
+    "sex_code": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "weight_kg": {
+      "min": 3.2,
+      "max": 242.6
+    },
+    "height_cm": {
+      "min": 78.3,
+      "max": 197.7
+    },
+    "bmi": {
+      "min": 12.3,
+      "max": 86.2
+    },
+    "waist_cm": {
+      "min": 40.0,
+      "max": 169.5
+    },
+    "hip_cm": {
+      "min": 66.6,
+      "max": 179.0
+    },
+    "hemoglobin_g_dl": {
+      "min": 6.4,
+      "max": 19.9
+    },
+    "hematocrit_pct": {
+      "min": 23.0,
+      "max": 58.8
+    },
+    "rbc_count": {
+      "min": 2.32,
+      "max": 7.84
+    },
+    "mcv_fl": {
+      "min": 35.4,
+      "max": 114.6
+    },
+    "mch_pg": {
+      "min": 12.4,
+      "max": 39.2
+    },
+    "rdw_pct": {
+      "min": 11.3,
+      "max": 29.2
+    },
+    "serum_vitamin_d_nmol_l": {
+      "min": 9.96,
+      "max": 422.0
+    },
+    "day1_energy_kcal": {
+      "min": 5.397605346934028e-79,
+      "max": 12501.0
+    },
+    "day1_protein_g": {
+      "min": 5.397605346934028e-79,
+      "max": 545.2
+    },
+    "day1_carbohydrate_g": {
+      "min": 5.397605346934028e-79,
+      "max": 1476.7599999999998
+    },
+    "day1_fat_g": {
+      "min": 5.397605346934028e-79,
+      "max": 567.9599999999999
+    },
+    "day1_fiber_g": {
+      "min": 5.397605346934028e-79,
+      "max": 107.8
+    },
+    "day1_calcium_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 7038.0
+    },
+    "day1_iron_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 111.03999999999999
+    },
+    "day1_vitamin_d_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 105.7
+    },
+    "day1_vitamin_b12_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 248.70999999999998
+    },
+    "day1_vitamin_c_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 1977.4000000000003
+    },
+    "day1_magnesium_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 1506.0
+    },
+    "day1_zinc_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 477.53
+    },
+    "day1_potassium_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 14358.0
+    },
+    "day1_sodium_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 25949.0
+    },
+    "day1_phosphorus_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 7373.0
+    },
+    "day1_selenium_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 2604.9
+    },
+    "day1_vitamin_b6_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 44.751
+    },
+    "day1_vitamin_k_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 2702.4
+    },
+    "day1_folate_dfe_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 6218.0
+    },
+    "day2_energy_kcal": {
+      "min": 5.397605346934028e-79,
+      "max": 11241.0
+    },
+    "day2_protein_g": {
+      "min": 5.397605346934028e-79,
+      "max": 345.53
+    },
+    "day2_carbohydrate_g": {
+      "min": 5.397605346934028e-79,
+      "max": 1455.45
+    },
+    "day2_fat_g": {
+      "min": 5.397605346934028e-79,
+      "max": 487.73
+    },
+    "day2_fiber_g": {
+      "min": 5.397605346934028e-79,
+      "max": 103.99999999999999
+    },
+    "day2_calcium_mg": {
+      "min": 9.0,
+      "max": 7510.0
+    },
+    "day2_iron_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 80.81
+    },
+    "day2_vitamin_d_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 92.1
+    },
+    "day2_vitamin_b12_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 156.26999999999998
+    },
+    "day2_vitamin_c_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 1035.3000000000002
+    },
+    "day2_magnesium_mg": {
+      "min": 3.0,
+      "max": 1445.0
+    },
+    "day2_zinc_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 97.48
+    },
+    "day2_potassium_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 12851.0
+    },
+    "day2_sodium_mg": {
+      "min": 7.0,
+      "max": 16552.0
+    },
+    "day2_phosphorus_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 7168.0
+    },
+    "day2_selenium_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 589.5
+    },
+    "day2_vitamin_b6_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 24.987999999999996
+    },
+    "day2_vitamin_k_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 2930.5
+    },
+    "day2_folate_dfe_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 5049.0
+    },
+    "avg_energy_kcal": {
+      "min": 14.0,
+      "max": 8356.5
+    },
+    "avg_protein_g": {
+      "min": 1.45,
+      "max": 370.83000000000004
+    },
+    "avg_carbohydrate_g": {
+      "min": 1.0,
+      "max": 1083.195
+    },
+    "avg_fat_g": {
+      "min": 0.48,
+      "max": 350.54499999999996
+    },
+    "avg_fiber_g": {
+      "min": 5.397605346934028e-79,
+      "max": 103.39999999999999
+    },
+    "avg_calcium_mg": {
+      "min": 35.0,
+      "max": 5199.0
+    },
+    "avg_iron_mg": {
+      "min": 0.11,
+      "max": 83.875
+    },
+    "avg_vitamin_d_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 70.69999999999999
+    },
+    "avg_vitamin_b12_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 126.285
+    },
+    "avg_vitamin_c_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 1090.5000000000002
+    },
+    "avg_magnesium_mg": {
+      "min": 9.5,
+      "max": 1316.0
+    },
+    "avg_zinc_mg": {
+      "min": 0.16,
+      "max": 251.49499999999998
+    },
+    "avg_potassium_mg": {
+      "min": 23.0,
+      "max": 9956.5
+    },
+    "avg_sodium_mg": {
+      "min": 80.0,
+      "max": 25949.0
+    },
+    "avg_phosphorus_mg": {
+      "min": 9.0,
+      "max": 5185.5
+    },
+    "avg_selenium_mcg": {
+      "min": 0.9,
+      "max": 1323.8500000000001
+    },
+    "avg_vitamin_b6_mg": {
+      "min": 5.397605346934028e-79,
+      "max": 26.489
+    },
+    "avg_vitamin_k_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 2702.4
+    },
+    "avg_folate_dfe_mcg": {
+      "min": 5.397605346934028e-79,
+      "max": 6218.0
+    },
+    "BIOPRO__LBXSATSI": {
+      "min": 2.0,
+      "max": 420.0
+    },
+    "BIOPRO__LBDSATLC": {
+      "min": 5.397605346934028e-79,
+      "max": 1.0
+    },
+    "BIOPRO__LBXSAL": {
+      "min": 2.1,
+      "max": 5.4
+    },
+    "BIOPRO__LBDSALSI": {
+      "min": 21.0,
+      "max": 54.0
+    },
+    "BIOPRO__LBXSAPSI": {
+      "min": 16.0,
+      "max": 638.0
+    },
+    "BIOPRO__LBXSASSI": {
+      "min": 6.0,
+      "max": 272.0
+    },
+    "BIOPRO__LBXSC3SI": {
+      "min": 16.0,
+      "max": 38.0
+    },
+    "BIOPRO__LBXSBU": {
+      "min": 2.0,
+      "max": 79.0
+    },
+    "BIOPRO__LBDSBUSI": {
+      "min": 0.71,
+      "max": 28.2
+    },
+    "BIOPRO__LBXSCLSI": {
+      "min": 84.0,
+      "max": 117.0
+    },
+    "BIOPRO__LBXSCK": {
+      "min": 16.0,
+      "max": 16959.0
+    },
+    "BIOPRO__LBXSCR": {
+      "min": 0.25,
+      "max": 12.74
+    },
+    "BIOPRO__LBDSCRSI": {
+      "min": 22.1,
+      "max": 1126.22
+    },
+    "BIOPRO__LBXSGB": {
+      "min": 1.8,
+      "max": 6.0
+    },
+    "BIOPRO__LBDSGBSI": {
+      "min": 18.0,
+      "max": 60.0
+    },
+    "BIOPRO__LBXSGL": {
+      "min": 47.0,
+      "max": 626.0
+    },
+    "BIOPRO__LBDSGLSI": {
+      "min": 2.61,
+      "max": 34.75
+    },
+    "BIOPRO__LBXSGTSI": {
+      "min": 2.0,
+      "max": 1192.0
+    },
+    "BIOPRO__LBDSGTLC": {
+      "min": 5.397605346934028e-79,
+      "max": 1.0
+    },
+    "BIOPRO__LBXSIR": {
+      "min": 10.0,
+      "max": 476.0
+    },
+    "BIOPRO__LBDSIRSI": {
+      "min": 1.8,
+      "max": 85.3
+    },
+    "BIOPRO__LBXSLDSI": {
+      "min": 51.0,
+      "max": 779.0
+    },
+    "BIOPRO__LBXSOSSI": {
+      "min": 246.0,
+      "max": 314.0
+    },
+    "BIOPRO__LBXSPH": {
+      "min": 1.9,
+      "max": 9.6
+    },
+    "BIOPRO__LBDSPHSI": {
+      "min": 0.614,
+      "max": 3.1
+    },
+    "BIOPRO__LBXSKSI": {
+      "min": 2.8,
+      "max": 6.6
+    },
+    "BIOPRO__LBXSNASI": {
+      "min": 121.0,
+      "max": 151.0
+    },
+    "BIOPRO__LBXSTB": {
+      "min": 0.1,
+      "max": 3.7
+    },
+    "BIOPRO__LBDSTBSI": {
+      "min": 1.71,
+      "max": 63.27
+    },
+    "BIOPRO__LBDSTBLC": {
+      "min": 5.397605346934028e-79,
+      "max": 1.0
+    },
+    "BIOPRO__LBXSCA": {
+      "min": 6.4,
+      "max": 11.7
+    },
+    "BIOPRO__LBDSCASI": {
+      "min": 1.6,
+      "max": 2.925
+    },
+    "BIOPRO__LBXSCH": {
+      "min": 77.0,
+      "max": 438.0
+    },
+    "BIOPRO__LBDSCHSI": {
+      "min": 1.991,
+      "max": 11.327
+    },
+    "BIOPRO__LBXSTP": {
+      "min": 5.3,
+      "max": 10.0
+    },
+    "BIOPRO__LBDSTPSI": {
+      "min": 53.0,
+      "max": 100.0
+    },
+    "BIOPRO__LBXSTR": {
+      "min": 25.0,
+      "max": 2923.0
+    },
+    "BIOPRO__LBDSTRSI": {
+      "min": 0.282,
+      "max": 33.001
+    },
+    "BIOPRO__LBXSUA": {
+      "min": 0.8,
+      "max": 15.1
+    },
+    "BIOPRO__LBDSUASI": {
+      "min": 47.6,
+      "max": 898.1
+    },
+    "GHB__LBXGH": {
+      "min": 3.8,
+      "max": 16.2
+    },
+    "FERTIN__LBXFER": {
+      "min": 1.04,
+      "max": 5190.0
+    },
+    "FERTIN__LBDFERSI": {
+      "min": 1.04,
+      "max": 5190.0
+    },
+    "HDL__LBDHDD": {
+      "min": 10.0,
+      "max": 189.0
+    },
+    "HDL__LBDHDDSI": {
+      "min": 0.26,
+      "max": 4.89
+    },
+    "TCHOL__LBXTC": {
+      "min": 76.0,
+      "max": 446.0
+    },
+    "TCHOL__LBDTCSI": {
+      "min": 1.97,
+      "max": 11.53
+    },
+    "TRIGLY__WTSAF2YR": {
+      "min": 5.397605346934028e-79,
+      "max": 944153.249752
+    },
+    "TRIGLY__LBXTR": {
+      "min": 10.0,
+      "max": 2684.0
+    },
+    "TRIGLY__LBDTRSI": {
+      "min": 0.113,
+      "max": 30.302
+    },
+    "TRIGLY__LBDLDL": {
+      "min": 18.0,
+      "max": 357.0
+    },
+    "TRIGLY__LBDLDLSI": {
+      "min": 0.465,
+      "max": 9.232
+    },
+    "TRIGLY__LBDLDLM": {
+      "min": 21.0,
+      "max": 358.0
+    },
+    "TRIGLY__LBDLDMSI": {
+      "min": 0.543,
+      "max": 9.258
+    },
+    "TRIGLY__LBDLDLN": {
+      "min": 20.0,
+      "max": 359.0
+    },
+    "TRIGLY__LBDLDNSI": {
+      "min": 0.517,
+      "max": 9.284
+    },
+    "ALB_CR__URXUMA": {
+      "min": 0.21,
+      "max": 14040.0
+    },
+    "ALB_CR__URXUMS": {
+      "min": 0.21,
+      "max": 14040.0
+    },
+    "ALB_CR__URDUMALC": {
+      "min": 5.397605346934028e-79,
+      "max": 1.0
+    },
+    "ALB_CR__URXUCR": {
+      "min": 3.54,
+      "max": 621.0
+    },
+    "ALB_CR__URXCRS": {
+      "min": 312.9,
+      "max": 54896.4
+    },
+    "ALB_CR__URDUCRLC": {
+      "min": 5.397605346934028e-79,
+      "max": 1.0
+    },
+    "ALB_CR__URDACT": {
+      "min": 0.27,
+      "max": 11676.92
+    },
+    "BPX__PEASCCT1": {
+      "min": 2.0,
+      "max": 4.0
+    },
+    "BPX__BPXCHR": {
+      "min": 60.0,
+      "max": 180.0
+    },
+    "BPX__BPAARM": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "BPX__BPACSZ": {
+      "min": 2.0,
+      "max": 5.0
+    },
+    "BPX__BPXPLS": {
+      "min": 34.0,
+      "max": 136.0
+    },
+    "BPX__BPXPULS": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "BPX__BPXPTY": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "BPX__BPXML1": {
+      "min": 100.0,
+      "max": 260.0
+    },
+    "BPX__BPXSY1": {
+      "min": 72.0,
+      "max": 228.0
+    },
+    "BPX__BPXDI1": {
+      "min": 5.397605346934028e-79,
+      "max": 136.0
+    },
+    "BPX__BPAEN1": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "BPX__BPXSY2": {
+      "min": 72.0,
+      "max": 236.0
+    },
+    "BPX__BPXDI2": {
+      "min": 5.397605346934028e-79,
+      "max": 136.0
+    },
+    "BPX__BPAEN2": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "BPX__BPXSY3": {
+      "min": 72.0,
+      "max": 238.0
+    },
+    "BPX__BPXDI3": {
+      "min": 5.397605346934028e-79,
+      "max": 134.0
+    },
+    "BPX__BPAEN3": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "BPX__BPXSY4": {
+      "min": 74.0,
+      "max": 234.0
+    },
+    "BPX__BPXDI4": {
+      "min": 5.397605346934028e-79,
+      "max": 118.0
+    },
+    "BPX__BPAEN4": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "serum_glucose_mg_dl": {
+      "min": 47.0,
+      "max": 626.0
+    },
+    "hba1c_percent": {
+      "min": 3.8,
+      "max": 16.2
+    },
+    "ferritin_ng_ml": {
+      "min": 1.04,
+      "max": 5190.0
+    },
+    "serum_iron_ug_dl": {
+      "min": 10.0,
+      "max": 476.0
+    },
+    "serum_creatinine_mg_dl": {
+      "min": 0.25,
+      "max": 12.74
+    },
+    "bun_mg_dl": {
+      "min": 2.0,
+      "max": 79.0
+    },
+    "urine_albumin_ug_ml": {
+      "min": 0.21,
+      "max": 14040.0
+    },
+    "urine_creatinine_mg_dl": {
+      "min": 3.54,
+      "max": 621.0
+    },
+    "alt_u_l": {
+      "min": 2.0,
+      "max": 420.0
+    },
+    "ast_u_l": {
+      "min": 6.0,
+      "max": 272.0
+    },
+    "albumin_g_dl": {
+      "min": 2.1,
+      "max": 5.4
+    },
+    "total_bilirubin_mg_dl": {
+      "min": 0.1,
+      "max": 3.7
+    },
+    "alkaline_phosphatase_u_l": {
+      "min": 16.0,
+      "max": 638.0
+    },
+    "ggt_u_l": {
+      "min": 2.0,
+      "max": 1192.0
+    },
+    "hdl_cholesterol_mg_dl": {
+      "min": 10.0,
+      "max": 189.0
+    },
+    "total_cholesterol_mg_dl": {
+      "min": 76.0,
+      "max": 446.0
+    },
+    "triglycerides_mg_dl": {
+      "min": 10.0,
+      "max": 2684.0
+    },
+    "sodium_mmol_l": {
+      "min": 121.0,
+      "max": 151.0
+    },
+    "potassium_mmol_l": {
+      "min": 2.8,
+      "max": 6.6
+    },
+    "chloride_mmol_l": {
+      "min": 84.0,
+      "max": 117.0
+    },
+    "bicarbonate_mmol_l": {
+      "min": 16.0,
+      "max": 38.0
+    },
+    "serum_calcium_mg_dl": {
+      "min": 6.4,
+      "max": 11.7
+    },
+    "serum_phosphorus_mg_dl": {
+      "min": 1.9,
+      "max": 9.6
+    },
+    "total_protein_g_dl": {
+      "min": 5.3,
+      "max": 10.0
+    },
+    "systolic_bp_mean_mmhg": {
+      "min": 72.66666666666667,
+      "max": 238.0
+    },
+    "systolic_bp_reading_count": {
+      "min": 0.0,
+      "max": 3.0
+    },
+    "diastolic_bp_mean_mmhg": {
+      "min": 5.397605346934028e-79,
+      "max": 135.33333333333334
+    },
+    "diastolic_bp_reading_count": {
+      "min": 0.0,
+      "max": 3.0
+    }
+  },
+  "domain_completeness": {
+    "nutritional_status": {
+      "features": [
+        "avg_protein_g",
+        "avg_iron_mg",
+        "bmi",
+        "albumin_g_dl"
+      ],
+      "available_features": [
+        "avg_protein_g",
+        "avg_iron_mg",
+        "bmi",
+        "albumin_g_dl"
+      ],
+      "complete_participants": 5340,
+      "complete_percent": 57.7,
+      "joint_availability": 5340
+    },
+    "anemia_iron": {
+      "features": [
+        "hemoglobin_g_dl",
+        "mcv_fl",
+        "ferritin_ng_ml",
+        "serum_iron_ug_dl"
+      ],
+      "available_features": [
+        "hemoglobin_g_dl",
+        "mcv_fl",
+        "ferritin_ng_ml",
+        "serum_iron_ug_dl"
+      ],
+      "complete_participants": 5876,
+      "complete_percent": 63.5,
+      "joint_availability": 5876
+    },
+    "glucose_regulation": {
+      "features": [
+        "serum_glucose_mg_dl",
+        "hba1c_percent"
+      ],
+      "available_features": [
+        "serum_glucose_mg_dl",
+        "hba1c_percent"
+      ],
+      "complete_participants": 5896,
+      "complete_percent": 63.71,
+      "joint_availability": 5896
+    },
+    "kidney_health": {
+      "features": [
+        "serum_creatinine_mg_dl",
+        "bun_mg_dl",
+        "urine_albumin_ug_ml",
+        "urine_creatinine_mg_dl"
+      ],
+      "available_features": [
+        "serum_creatinine_mg_dl",
+        "bun_mg_dl",
+        "urine_albumin_ug_ml",
+        "urine_creatinine_mg_dl"
+      ],
+      "complete_participants": 5798,
+      "complete_percent": 62.65,
+      "joint_availability": 5798
+    },
+    "kidney_stone": {
+      "features": [
+        "serum_calcium_mg_dl",
+        "serum_phosphorus_mg_dl"
+      ],
+      "available_features": [
+        "serum_calcium_mg_dl",
+        "serum_phosphorus_mg_dl"
+      ],
+      "complete_participants": 5901,
+      "complete_percent": 63.77,
+      "joint_availability": 5901
+    },
+    "liver_health": {
+      "features": [
+        "alt_u_l",
+        "ast_u_l",
+        "albumin_g_dl",
+        "total_bilirubin_mg_dl"
+      ],
+      "available_features": [
+        "alt_u_l",
+        "ast_u_l",
+        "albumin_g_dl",
+        "total_bilirubin_mg_dl"
+      ],
+      "complete_participants": 5882,
+      "complete_percent": 63.56,
+      "joint_availability": 5882
+    },
+    "cardiovascular_metabolic": {
+      "features": [
+        "total_cholesterol_mg_dl",
+        "hdl_cholesterol_mg_dl",
+        "triglycerides_mg_dl",
+        "systolic_bp_mean_mmhg",
+        "diastolic_bp_mean_mmhg"
+      ],
+      "available_features": [
+        "total_cholesterol_mg_dl",
+        "hdl_cholesterol_mg_dl",
+        "triglycerides_mg_dl",
+        "systolic_bp_mean_mmhg",
+        "diastolic_bp_mean_mmhg"
+      ],
+      "complete_participants": 2689,
+      "complete_percent": 29.06,
+      "joint_availability": 2689
+    },
+    "hydration_electrolytes": {
+      "features": [
+        "sodium_mmol_l",
+        "potassium_mmol_l",
+        "chloride_mmol_l"
+      ],
+      "available_features": [
+        "sodium_mmol_l",
+        "potassium_mmol_l",
+        "chloride_mmol_l"
+      ],
+      "complete_participants": 5899,
+      "complete_percent": 63.75,
+      "joint_availability": 5899
+    },
+    "bone_nutrition": {
+      "features": [
+        "serum_vitamin_d_nmol_l",
+        "serum_calcium_mg_dl",
+        "serum_phosphorus_mg_dl"
+      ],
+      "available_features": [
+        "serum_vitamin_d_nmol_l",
+        "serum_calcium_mg_dl",
+        "serum_phosphorus_mg_dl"
+      ],
+      "complete_participants": 5900,
+      "complete_percent": 63.76,
+      "joint_availability": 5900
+    }
+  },
+  "mapping_verification": {
+    "serum_glucose_mg_dl": {
+      "source_column": "BIOPRO__LBXSGL",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "hba1c_percent": {
+      "source_column": "GHB__LBXGH",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "ferritin_ng_ml": {
+      "source_column": "FERTIN__LBXFER",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "serum_iron_ug_dl": {
+      "source_column": "BIOPRO__LBXSIR",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "serum_creatinine_mg_dl": {
+      "source_column": "BIOPRO__LBXSCR",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "bun_mg_dl": {
+      "source_column": "BIOPRO__LBXSBU",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "urine_albumin_ug_ml": {
+      "source_column": "ALB_CR__URXUMA",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "urine_creatinine_mg_dl": {
+      "source_column": "ALB_CR__URXUCR",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "alt_u_l": {
+      "source_column": "BIOPRO__LBXSATSI",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "ast_u_l": {
+      "source_column": "BIOPRO__LBXSASSI",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "albumin_g_dl": {
+      "source_column": "BIOPRO__LBXSAL",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "total_bilirubin_mg_dl": {
+      "source_column": "BIOPRO__LBXSTB",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "hdl_cholesterol_mg_dl": {
+      "source_column": "HDL__LBDHDD",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "total_cholesterol_mg_dl": {
+      "source_column": "TCHOL__LBXTC",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "triglycerides_mg_dl": {
+      "source_column": "TRIGLY__LBXTR",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "sodium_mmol_l": {
+      "source_column": "BIOPRO__LBXSNASI",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "potassium_mmol_l": {
+      "source_column": "BIOPRO__LBXSKSI",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "chloride_mmol_l": {
+      "source_column": "BIOPRO__LBXSCLSI",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "serum_calcium_mg_dl": {
+      "source_column": "BIOPRO__LBXSCA",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    },
+    "serum_phosphorus_mg_dl": {
+      "source_column": "BIOPRO__LBXSPH",
+      "present": true,
+      "status": "copied_without_unit_conversion; official NHANES documentation still required"
+    }
+  },
+  "blood_pressure": {
+    "method": "mean of valid positive readings; systolic <=300 and diastolic <=200 are engineering filters",
+    "source_fields": [
+      "BPX__BPXSY1..4",
+      "BPX__BPXDI1..4"
+    ]
+  },
+  "limitations": [
+    "Read-only audit; ranges are descriptive, not clinical plausibility decisions.",
+    "Units require official NHANES documentation verification before clinical use."
+  ]
+}

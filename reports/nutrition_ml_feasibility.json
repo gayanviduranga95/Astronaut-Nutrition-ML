@@ -1,0 +1,102 @@
+{
+  "dataset": "astronaut_nutrition_features_v3.csv",
+  "domains": {
+    "nutritional_status": {
+      "candidate_targets": [],
+      "observed_or_derived": "No domain-specific outcome target established",
+      "usable_complete_samples": 5340,
+      "missingness_constraint": 57.7,
+      "leakage_risk": "High if a target is constructed from included biomarker features",
+      "class_balance": "Not applicable without a legitimate target",
+      "meaningful_supervised_validation": false,
+      "limitation": "No verified clinical or longitudinal outcome target; do not train a domain predictor."
+    },
+    "anemia_iron": {
+      "candidate_targets": [],
+      "observed_or_derived": "No domain-specific outcome target established",
+      "usable_complete_samples": 5876,
+      "missingness_constraint": 63.5,
+      "leakage_risk": "High if a target is constructed from included biomarker features",
+      "class_balance": "Not applicable without a legitimate target",
+      "meaningful_supervised_validation": false,
+      "limitation": "No verified clinical or longitudinal outcome target; do not train a domain predictor."
+    },
+    "glucose_regulation": {
+      "candidate_targets": [],
+      "observed_or_derived": "No domain-specific outcome target established",
+      "usable_complete_samples": 5896,
+      "missingness_constraint": 63.71,
+      "leakage_risk": "High if a target is constructed from included biomarker features",
+      "class_balance": "Not applicable without a legitimate target",
+      "meaningful_supervised_validation": false,
+      "limitation": "No verified clinical or longitudinal outcome target; do not train a domain predictor."
+    },
+    "kidney_health": {
+      "candidate_targets": [],
+      "observed_or_derived": "No domain-specific outcome target established",
+      "usable_complete_samples": 5798,
+      "missingness_constraint": 62.65,
+      "leakage_risk": "High if a target is constructed from included biomarker features",
+      "class_balance": "Not applicable without a legitimate target",
+      "meaningful_supervised_validation": false,
+      "limitation": "No verified clinical or longitudinal outcome target; do not train a domain predictor."
+    },
+    "kidney_stone": {
+      "candidate_targets": [],
+      "observed_or_derived": "No domain-specific outcome target established",
+      "usable_complete_samples": 5901,
+      "missingness_constraint": 63.77,
+      "leakage_risk": "High if a target is constructed from included biomarker features",
+      "class_balance": "Not applicable without a legitimate target",
+      "meaningful_supervised_validation": false,
+      "limitation": "No verified clinical or longitudinal outcome target; do not train a domain predictor."
+    },
+    "liver_health": {
+      "candidate_targets": [],
+      "observed_or_derived": "No domain-specific outcome target established",
+      "usable_complete_samples": 5882,
+      "missingness_constraint": 63.56,
+      "leakage_risk": "High if a target is constructed from included biomarker features",
+      "class_balance": "Not applicable without a legitimate target",
+      "meaningful_supervised_validation": false,
+      "limitation": "No verified clinical or longitudinal outcome target; do not train a domain predictor."
+    },
+    "cardiovascular_metabolic": {
+      "candidate_targets": [],
+      "observed_or_derived": "No domain-specific outcome target established",
+      "usable_complete_samples": 2689,
+      "missingness_constraint": 29.06,
+      "leakage_risk": "High if a target is constructed from included biomarker features",
+      "class_balance": "Not applicable without a legitimate target",
+      "meaningful_supervised_validation": false,
+      "limitation": "No verified clinical or longitudinal outcome target; do not train a domain predictor."
+    },
+    "hydration_electrolytes": {
+      "candidate_targets": [],
+      "observed_or_derived": "No domain-specific outcome target established",
+      "usable_complete_samples": 5899,
+      "missingness_constraint": 63.75,
+      "leakage_risk": "High if a target is constructed from included biomarker features",
+      "class_balance": "Not applicable without a legitimate target",
+      "meaningful_supervised_validation": false,
+      "limitation": "No verified clinical or longitudinal outcome target; do not train a domain predictor."
+    },
+    "bone_nutrition": {
+      "candidate_targets": [],
+      "observed_or_derived": "No domain-specific outcome target established",
+      "usable_complete_samples": 5900,
+      "missingness_constraint": 63.76,
+      "leakage_risk": "High if a target is constructed from included biomarker features",
+      "class_balance": "Not applicable without a legitimate target",
+      "meaningful_supervised_validation": false,
+      "limitation": "No verified clinical or longitudinal outcome target; do not train a domain predictor."
+    }
+  },
+  "existing_research_artifacts": "Existing vitamin-D artifacts are separate research work and not evidence for nine-domain or astronaut prediction.",
+  "pipeline_guidance": [
+    "Use train/test splits before preprocessing.",
+    "Fit imputers/scalers on training data only through sklearn Pipeline.",
+    "Record seed, selected features, target provenance, and leakage audit."
+  ],
+  "conclusion": "No new supervised nutrition-domain model trained because legitimate targets were not established."
+}

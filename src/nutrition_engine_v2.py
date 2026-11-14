@@ -180,7 +180,37 @@ def assess_domain(record, domain, features):
         ),
         "findings": [],
         "finding_count": 0,
+        "measurement_summaries": [],
+        "derived_measurements": {},
+        "interpretation_summary": None,
     }
+
+
+def domain_interpretation_summary(assessment):
+    """Describe measurement coverage without producing clinical labels."""
+    available_count = assessment["available_count"]
+    required_count = assessment["required_count"]
+    reference_count = assessment["finding_count"]
+
+    if available_count == 0:
+        return (
+            "No supported measurements were provided for this domain; "
+            "no interpretation is available."
+        )
+
+    summary = (
+        f"{available_count} of {required_count} supported measurements are "
+        "available for descriptive monitoring"
+    )
+    if reference_count:
+        summary += f"; {reference_count} research reference comparison(s) are included"
+    summary += "."
+
+    if assessment["missing_features"]:
+        summary += " Incomplete measurements limit interpretation."
+    if assessment["status"] == "limited_assessment":
+        summary += " This domain has additional measurement limitations."
+    return summary
 
 
 # ============================================================
@@ -217,23 +247,36 @@ def assess_nutrition(record: dict):
     # Interpret supported measurements.
     interpretation = interpret_nutrition(record)
 
-    # Attach each finding to its health domain.
+    # Attach each finding to its health domain. The interpretation-provided
+    # domain is preferred; the map remains as a backwards-compatible fallback.
     for finding in interpretation["findings"]:
         measurement = finding["measurement"]
 
-        domain = FINDING_DOMAIN_MAP.get(
-            measurement
-        )
+        domain = finding.get("domain") or FINDING_DOMAIN_MAP.get(measurement)
 
         if domain in results:
             results[domain]["findings"].append(
                 finding.copy()
             )
 
+    # Keep descriptive and derived measurements separate from research findings.
+    # This avoids treating routine recorded values as clinical findings.
+    for summary in interpretation["measurement_summaries"]:
+        domain = summary.get("domain")
+        if domain in results:
+            results[domain]["measurement_summaries"].append(summary.copy())
+            if summary.get("finding_type") == "derived_measurement":
+                results[domain]["derived_measurements"][summary["measurement"]] = (
+                    summary["value"]
+                )
+
     # Calculate finding counts.
     for domain in results:
         results[domain]["finding_count"] = len(
             results[domain]["findings"]
+        )
+        results[domain]["interpretation_summary"] = domain_interpretation_summary(
+            results[domain]
         )
 
     return {
