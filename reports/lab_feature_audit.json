@@ -1,0 +1,236 @@
+{
+  "rows": 9254,
+  "columns": 630,
+  "candidate_features": {
+    "glucose_regulation": {
+      "glucose": {
+        "column": "BIOPRO__LBXSGL",
+        "status": "FOUND",
+        "non_missing": 5901
+      },
+      "hba1c": {
+        "column": "GHB__LBXGH",
+        "status": "FOUND",
+        "non_missing": 6045
+      }
+    },
+    "anemia_iron": {
+      "hemoglobin": {
+        "column": "CBC__LBXHGB",
+        "status": "FOUND",
+        "non_missing": 7528
+      },
+      "mcv": {
+        "column": "CBC__LBXMCVSI",
+        "status": "FOUND",
+        "non_missing": 7528
+      },
+      "ferritin": {
+        "column": "FERTIN__LBXFER",
+        "status": "FOUND",
+        "non_missing": 6589
+      },
+      "serum_iron": {
+        "column": "BIOPRO__LBXSIR",
+        "status": "FOUND",
+        "non_missing": 5902
+      }
+    },
+    "kidney_health": {
+      "creatinine": {
+        "column": "BIOPRO__LBXSCR",
+        "status": "FOUND",
+        "non_missing": 5903
+      },
+      "bun": {
+        "column": "BIOPRO__LBXSBU",
+        "status": "FOUND",
+        "non_missing": 5901
+      },
+      "urine_albumin": {
+        "column": "ALB_CR__URXUMA",
+        "status": "FOUND",
+        "non_missing": 7632
+      },
+      "urine_creatinine": {
+        "column": "ALB_CR__URXUCR",
+        "status": "FOUND",
+        "non_missing": 7632
+      }
+    },
+    "liver_health": {
+      "alt": {
+        "column": "BIOPRO__LBXSATSI",
+        "status": "FOUND",
+        "non_missing": 5902
+      },
+      "ast": {
+        "column": "BIOPRO__LBXSASSI",
+        "status": "FOUND",
+        "non_missing": 5882
+      },
+      "albumin": {
+        "column": "BIOPRO__LBXSAL",
+        "status": "FOUND",
+        "non_missing": 5905
+      },
+      "bilirubin": {
+        "column": "BIOPRO__LBXSTB",
+        "status": "FOUND",
+        "non_missing": 5903
+      }
+    },
+    "cardiovascular_metabolic": {
+      "hdl": {
+        "column": "HDL__LBDHDD",
+        "status": "FOUND",
+        "non_missing": 6738
+      },
+      "total_cholesterol": {
+        "column": "TCHOL__LBXTC",
+        "status": "FOUND",
+        "non_missing": 6738
+      },
+      "triglycerides": {
+        "column": "TRIGLY__LBXTR",
+        "status": "FOUND",
+        "non_missing": 2834
+      }
+    },
+    "hydration_electrolytes": {
+      "sodium": {
+        "column": "BIOPRO__LBXSNASI",
+        "status": "FOUND",
+        "non_missing": 5904
+      },
+      "potassium": {
+        "column": "BIOPRO__LBXSKSI",
+        "status": "FOUND",
+        "non_missing": 5899
+      },
+      "chloride": {
+        "column": "BIOPRO__LBXSCLSI",
+        "status": "FOUND",
+        "non_missing": 5904
+      }
+    },
+    "bone_nutrition": {
+      "vitamin_d": {
+        "column": "VID__LBXVIDMS",
+        "status": "FOUND",
+        "non_missing": 7409
+      },
+      "calcium": {
+        "column": "BIOPRO__LBXSCA",
+        "status": "FOUND",
+        "non_missing": 5901
+      },
+      "phosphorus": {
+        "column": "BIOPRO__LBXSPH",
+        "status": "FOUND",
+        "non_missing": 5901
+      }
+    }
+  },
+  "source_columns": {
+    "BIOPRO": {
+      "BIOPRO__LBXSATSI": 5902,
+      "BIOPRO__LBDSATLC": 5902,
+      "BIOPRO__LBXSAL": 5905,
+      "BIOPRO__LBDSALSI": 5905,
+      "BIOPRO__LBXSAPSI": 5903,
+      "BIOPRO__LBXSASSI": 5882,
+      "BIOPRO__LBXSC3SI": 5901,
+      "BIOPRO__LBXSBU": 5901,
+      "BIOPRO__LBDSBUSI": 5901,
+      "BIOPRO__LBXSCLSI": 5904,
+      "BIOPRO__LBXSCK": 5899,
+      "BIOPRO__LBXSCR": 5903,
+      "BIOPRO__LBDSCRSI": 5903,
+      "BIOPRO__LBXSGB": 5901,
+      "BIOPRO__LBDSGBSI": 5901,
+      "BIOPRO__LBXSGL": 5901,
+      "BIOPRO__LBDSGLSI": 5901,
+      "BIOPRO__LBXSGTSI": 5902,
+      "BIOPRO__LBDSGTLC": 5902,
+      "BIOPRO__LBXSIR": 5902,
+      "BIOPRO__LBDSIRSI": 5902,
+      "BIOPRO__LBXSLDSI": 5773,
+      "BIOPRO__LBXSOSSI": 5901,
+      "BIOPRO__LBXSPH": 5901,
+      "BIOPRO__LBDSPHSI": 5901,
+      "BIOPRO__LBXSKSI": 5899,
+      "BIOPRO__LBXSNASI": 5904,
+      "BIOPRO__LBXSTB": 5903,
+      "BIOPRO__LBDSTBSI": 5902,
+      "BIOPRO__LBDSTBLC": 5903,
+      "BIOPRO__LBXSCA": 5901,
+      "BIOPRO__LBDSCASI": 5901,
+      "BIOPRO__LBXSCH": 5903,
+      "BIOPRO__LBDSCHSI": 5903,
+      "BIOPRO__LBXSTP": 5901,
+      "BIOPRO__LBDSTPSI": 5901,
+      "BIOPRO__LBXSTR": 5901,
+      "BIOPRO__LBDSTRSI": 5901,
+      "BIOPRO__LBXSUA": 5901,
+      "BIOPRO__LBDSUASI": 5901
+    },
+    "GHB": {
+      "GHB__LBXGH": 6045
+    },
+    "FERTIN": {
+      "FERTIN__LBXFER": 6589,
+      "FERTIN__LBDFERSI": 6589
+    },
+    "HDL": {
+      "HDL__LBDHDD": 6738,
+      "HDL__LBDHDDSI": 6738
+    },
+    "TCHOL": {
+      "TCHOL__LBXTC": 6738,
+      "TCHOL__LBDTCSI": 6738
+    },
+    "TRIGLY": {
+      "TRIGLY__WTSAF2YR": 3036,
+      "TRIGLY__LBXTR": 2834,
+      "TRIGLY__LBDTRSI": 2834,
+      "TRIGLY__LBDLDL": 2808,
+      "TRIGLY__LBDLDLSI": 2808,
+      "TRIGLY__LBDLDLM": 2808,
+      "TRIGLY__LBDLDMSI": 2808,
+      "TRIGLY__LBDLDLN": 2827,
+      "TRIGLY__LBDLDNSI": 2827
+    },
+    "ALB_CR": {
+      "ALB_CR__URXUMA": 7632,
+      "ALB_CR__URXUMS": 7632,
+      "ALB_CR__URDUMALC": 7632,
+      "ALB_CR__URXUCR": 7632,
+      "ALB_CR__URXCRS": 7632,
+      "ALB_CR__URDUCRLC": 7632,
+      "ALB_CR__URDACT": 7632
+    },
+    "BPX": {
+      "BPX__PEASCCT1": 444,
+      "BPX__BPXCHR": 1539,
+      "BPX__BPAARM": 6817,
+      "BPX__BPACSZ": 6812,
+      "BPX__BPXPLS": 6742,
+      "BPX__BPXPULS": 8281,
+      "BPX__BPXPTY": 6742,
+      "BPX__BPXML1": 6731,
+      "BPX__BPXSY1": 6302,
+      "BPX__BPXDI1": 6302,
+      "BPX__BPAEN1": 6302,
+      "BPX__BPXSY2": 6563,
+      "BPX__BPXDI2": 6563,
+      "BPX__BPAEN2": 6563,
+      "BPX__BPXSY3": 6538,
+      "BPX__BPXDI3": 6538,
+      "BPX__BPAEN3": 6538,
+      "BPX__BPXSY4": 556,
+      "BPX__BPXDI4": 556,
+      "BPX__BPAEN4": 556
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "cross_validation": {
+    "Logistic Regression": {
+      "roc_auc_mean": 0.6933590996855157,
+      "roc_auc_std": 0.01834349354068534,
+      "average_precision_mean": 0.4657670021769362,
+      "balanced_accuracy_mean": 0.5578038872906929
+    },
+    "Random Forest": {
+      "roc_auc_mean": 0.6920960893255621,
+      "roc_auc_std": 0.01775200988933691,
+      "average_precision_mean": 0.45804006321113466,
+      "balanced_accuracy_mean": 0.5617541691599703
+    }
+  },
+  "threshold_search": [
+    {
+      "threshold": 0.1,
+      "recall": 0.9876160990712074,
+      "precision": 0.30448615972001275,
+      "balanced_accuracy": 0.5281071547763365
+    },
+    {
+      "threshold": 0.15,
+      "recall": 0.932920536635707,
+      "precision": 0.3301680058436815,
+      "balanced_accuracy": 0.5757487216625489
+    },
+    {
+      "threshold": 0.2,
+      "recall": 0.8617131062951496,
+      "precision": 0.36194191590810576,
+      "balanced_accuracy": 0.6172647338037316
+    },
+    {
+      "threshold": 0.25,
+      "recall": 0.7337461300309598,
+      "precision": 0.3941241685144124,
+      "balanced_accuracy": 0.6340226176358463
+    },
+    {
+      "threshold": 0.3,
+      "recall": 0.6140350877192983,
+      "precision": 0.4274425287356322,
+      "balanced_accuracy": 0.637226321021984
+    },
+    {
+      "threshold": 0.35,
+      "recall": 0.5139318885448917,
+      "precision": 0.469811320754717,
+      "balanced_accuracy": 0.6372386328110058
+    },
+    {
+      "threshold": 0.4,
+      "recall": 0.39628482972136225,
+      "precision": 0.5032765399737876,
+      "balanced_accuracy": 0.6174010428964716
+    },
+    {
+      "threshold": 0.45,
+      "recall": 0.2889576883384933,
+      "precision": 0.5415860735009671,
+      "balanced_accuracy": 0.5939888569515219
+    },
+    {
+      "threshold": 0.5,
+      "recall": 0.18163054695562436,
+      "precision": 0.5317220543806647,
+      "balanced_accuracy": 0.5577943957615787
+    },
+    {
+      "threshold": 0.55,
+      "recall": 0.10319917440660474,
+      "precision": 0.5494505494505495,
+      "balanced_accuracy": 0.5341304777018111
+    },
+    {
+      "threshold": 0.6,
+      "recall": 0.05159958720330237,
+      "precision": 0.5263157894736842,
+      "balanced_accuracy": 0.5162130871679059
+    },
+    {
+      "threshold": 0.65,
+      "recall": 0.02063983488132095,
+      "precision": 0.5128205128205128,
+      "balanced_accuracy": 0.5062721969464126
+    },
+    {
+      "threshold": 0.7,
+      "recall": 0.01238390092879257,
+      "precision": 0.5714285714285714,
+      "balanced_accuracy": 0.5042746091776472
+    },
+    {
+      "threshold": 0.75,
+      "recall": 0.005159958720330237,
+      "precision": 0.625,
+      "balanced_accuracy": 0.5019408655979154
+    },
+    {
+      "threshold": 0.8,
+      "recall": 0.0010319917440660474,
+      "precision": 0.5,
+      "balanced_accuracy": 0.5003029579512831
+    },
+    {
+      "threshold": 0.85,
+      "recall": 0.0,
+      "precision": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "threshold": 0.9,
+      "recall": 0.0,
+      "precision": 0.0,
+      "balanced_accuracy": 0.5
+    }
+  ],
+  "final_test": {
+    "model": "Logistic Regression",
+    "threshold": 0.2,
+    "roc_auc": 0.671382189239332,
+    "average_precision": 0.461080694139967,
+    "accuracy": 0.5120481927710844,
+    "balanced_accuracy": 0.6069812222409625,
+    "precision": 0.3562610229276896,
+    "recall": 0.8347107438016529,
+    "confusion_matrix": [
+      [
+        223,
+        365
+      ],
+      [
+        40,
+        202
+      ]
+    ],
+    "dummy_roc_auc": 0.5,
+    "dummy_average_precision": 0.29156626506024097
+  }
+}

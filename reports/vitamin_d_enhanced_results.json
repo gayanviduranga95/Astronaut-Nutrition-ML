@@ -1,0 +1,153 @@
+{
+  "cross_validation": {
+    "Original - Logistic Regression": {
+      "roc_auc_mean": 0.6924053588311736,
+      "roc_auc_std": 0.01863540431855091,
+      "average_precision_mean": 0.464601136487169,
+      "balanced_accuracy_mean": 0.5569808374768457
+    },
+    "Original - Random Forest": {
+      "roc_auc_mean": 0.691145468347514,
+      "roc_auc_std": 0.017417381704365294,
+      "average_precision_mean": 0.46125056877372284,
+      "balanced_accuracy_mean": 0.555522255289212
+    },
+    "Enhanced - Logistic Regression": {
+      "roc_auc_mean": 0.7647947244282093,
+      "roc_auc_std": 0.005684538265072087,
+      "average_precision_mean": 0.5391832346539941,
+      "balanced_accuracy_mean": 0.6153620064214341
+    },
+    "Enhanced - Random Forest": {
+      "roc_auc_mean": 0.7653362330983369,
+      "roc_auc_std": 0.009024629173924091,
+      "average_precision_mean": 0.5358186621424467,
+      "balanced_accuracy_mean": 0.6146337330004551
+    }
+  },
+  "threshold_search": [
+    {
+      "threshold": 0.1,
+      "recall": 0.9680082559339526,
+      "precision": 0.36726703210649964,
+      "balanced_accuracy": 0.6397348480351484
+    },
+    {
+      "threshold": 0.15,
+      "recall": 0.9484004127966976,
+      "precision": 0.3846797823357053,
+      "balanced_accuracy": 0.6610344628960054
+    },
+    {
+      "threshold": 0.2,
+      "recall": 0.9091847265221878,
+      "precision": 0.4033882783882784,
+      "balanced_accuracy": 0.6770039525239827
+    },
+    {
+      "threshold": 0.25,
+      "recall": 0.8452012383900929,
+      "precision": 0.4223826714801444,
+      "balanced_accuracy": 0.6839981479551658
+    },
+    {
+      "threshold": 0.3,
+      "recall": 0.7750257997936016,
+      "precision": 0.45542753183747725,
+      "balanced_accuracy": 0.6962048470633965
+    },
+    {
+      "threshold": 0.35,
+      "recall": 0.6707946336429309,
+      "precision": 0.4883546205860255,
+      "balanced_accuracy": 0.6903184927907879
+    },
+    {
+      "threshold": 0.4,
+      "recall": 0.5500515995872033,
+      "precision": 0.5225490196078432,
+      "balanced_accuracy": 0.6712763323884035
+    },
+    {
+      "threshold": 0.45,
+      "recall": 0.4375644994840041,
+      "precision": 0.557161629434954,
+      "balanced_accuracy": 0.646988470449288
+    },
+    {
+      "threshold": 0.5,
+      "recall": 0.31785345717234265,
+      "precision": 0.5968992248062015,
+      "balanced_accuracy": 0.6146148410701935
+    },
+    {
+      "threshold": 0.55,
+      "recall": 0.21568627450980393,
+      "precision": 0.6005747126436781,
+      "balanced_accuracy": 0.5782308662706668
+    },
+    {
+      "threshold": 0.6,
+      "recall": 0.13415892672858618,
+      "precision": 0.6220095693779905,
+      "balanced_accuracy": 0.5502494676250514
+    },
+    {
+      "threshold": 0.65,
+      "recall": 0.07017543859649122,
+      "precision": 0.6476190476190476,
+      "balanced_accuracy": 0.5272053162304995
+    },
+    {
+      "threshold": 0.7,
+      "recall": 0.021671826625386997,
+      "precision": 0.6176470588235294,
+      "balanced_accuracy": 0.5080664203429449
+    },
+    {
+      "threshold": 0.75,
+      "recall": 0.0030959752321981426,
+      "precision": 0.42857142857142855,
+      "balanced_accuracy": 0.5006958359330995
+    },
+    {
+      "threshold": 0.8,
+      "recall": 0.0,
+      "precision": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "threshold": 0.85,
+      "recall": 0.0,
+      "precision": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "threshold": 0.9,
+      "recall": 0.0,
+      "precision": 0.0,
+      "balanced_accuracy": 0.5
+    }
+  ],
+  "final_test": {
+    "feature_set": "Enhanced",
+    "model": "Random Forest",
+    "threshold": 0.25,
+    "roc_auc": 0.7645260583572272,
+    "average_precision": 0.5749813748746682,
+    "accuracy": 0.6240963855421687,
+    "balanced_accuracy": 0.6872786304604486,
+    "precision": 0.4264705882352941,
+    "recall": 0.8388429752066116,
+    "confusion_matrix": [
+      [
+        315,
+        273
+      ],
+      [
+        39,
+        203
+      ]
+    ]
+  }
+}

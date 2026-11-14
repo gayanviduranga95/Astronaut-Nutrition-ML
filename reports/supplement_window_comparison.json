@@ -1,0 +1,58 @@
+{
+  "Original + Season": {
+    "Logistic Regression": {
+      "roc_auc_mean": 0.703,
+      "roc_auc_std": 0.0205,
+      "average_precision_mean": 0.4873,
+      "balanced_accuracy_mean": 0.5798
+    },
+    "Random Forest": {
+      "roc_auc_mean": 0.704,
+      "roc_auc_std": 0.0225,
+      "average_precision_mean": 0.4831,
+      "balanced_accuracy_mean": 0.5746
+    }
+  },
+  "Day 1 + Season": {
+    "Logistic Regression": {
+      "roc_auc_mean": 0.7654,
+      "roc_auc_std": 0.0057,
+      "average_precision_mean": 0.5409,
+      "balanced_accuracy_mean": 0.6158
+    },
+    "Random Forest": {
+      "roc_auc_mean": 0.7656,
+      "roc_auc_std": 0.0088,
+      "average_precision_mean": 0.5367,
+      "balanced_accuracy_mean": 0.6163
+    }
+  },
+  "30 Day + Season": {
+    "Logistic Regression": {
+      "roc_auc_mean": 0.782,
+      "roc_auc_std": 0.0161,
+      "average_precision_mean": 0.561,
+      "balanced_accuracy_mean": 0.6463
+    },
+    "Random Forest": {
+      "roc_auc_mean": 0.7788,
+      "roc_auc_std": 0.0154,
+      "average_precision_mean": 0.5554,
+      "balanced_accuracy_mean": 0.6347
+    }
+  },
+  "Both Windows + Season": {
+    "Logistic Regression": {
+      "roc_auc_mean": 0.7858,
+      "roc_auc_std": 0.0123,
+      "average_precision_mean": 0.5645,
+      "balanced_accuracy_mean": 0.6448
+    },
+    "Random Forest": {
+      "roc_auc_mean": 0.7844,
+      "roc_auc_std": 0.0144,
+      "average_precision_mean": 0.564,
+      "balanced_accuracy_mean": 0.6417
+    }
+  }
+}

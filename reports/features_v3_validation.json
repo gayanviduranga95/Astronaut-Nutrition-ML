@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "Row count preserved": true,
+    "Expected participants": true,
+    "Unique participant IDs": true,
+    "No missing participant IDs": true,
+    "Expected column count": true,
+    "Participant order preserved": true,
+    "Source match: serum_glucose_mg_dl": true,
+    "Source match: hba1c_percent": true,
+    "Source match: ferritin_ng_ml": true,
+    "Source match: serum_creatinine_mg_dl": true,
+    "Source match: alt_u_l": true,
+    "Source match: sodium_mmol_l": true,
+    "Source match: serum_calcium_mg_dl": true,
+    "Source match: triglycerides_mg_dl": true,
+    "systolic BP mean": true,
+    "systolic BP reading count": true,
+    "diastolic BP mean": true,
+    "diastolic BP reading count": true
+  },
+  "passed": 18,
+  "total": 18,
+  "all_passed": true
+}

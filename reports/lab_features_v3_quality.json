@@ -1,0 +1,207 @@
+{
+  "source_dataset": "astronaut_nutrition_master_v2.csv",
+  "output_dataset": "astronaut_nutrition_features_v3.csv",
+  "population": "NHANES 2017-2018 research participants",
+  "rows": 9254,
+  "columns": 658,
+  "unique_participants": 9254,
+  "new_features": {
+    "serum_glucose_mg_dl": {
+      "non_missing": 5901,
+      "missing": 3353
+    },
+    "hba1c_percent": {
+      "non_missing": 6045,
+      "missing": 3209
+    },
+    "ferritin_ng_ml": {
+      "non_missing": 6589,
+      "missing": 2665
+    },
+    "serum_iron_ug_dl": {
+      "non_missing": 5902,
+      "missing": 3352
+    },
+    "serum_creatinine_mg_dl": {
+      "non_missing": 5903,
+      "missing": 3351
+    },
+    "bun_mg_dl": {
+      "non_missing": 5901,
+      "missing": 3353
+    },
+    "urine_albumin_ug_ml": {
+      "non_missing": 7632,
+      "missing": 1622
+    },
+    "urine_creatinine_mg_dl": {
+      "non_missing": 7632,
+      "missing": 1622
+    },
+    "alt_u_l": {
+      "non_missing": 5902,
+      "missing": 3352
+    },
+    "ast_u_l": {
+      "non_missing": 5882,
+      "missing": 3372
+    },
+    "albumin_g_dl": {
+      "non_missing": 5905,
+      "missing": 3349
+    },
+    "total_bilirubin_mg_dl": {
+      "non_missing": 5903,
+      "missing": 3351
+    },
+    "alkaline_phosphatase_u_l": {
+      "non_missing": 5903,
+      "missing": 3351
+    },
+    "ggt_u_l": {
+      "non_missing": 5902,
+      "missing": 3352
+    },
+    "hdl_cholesterol_mg_dl": {
+      "non_missing": 6738,
+      "missing": 2516
+    },
+    "total_cholesterol_mg_dl": {
+      "non_missing": 6738,
+      "missing": 2516
+    },
+    "triglycerides_mg_dl": {
+      "non_missing": 2834,
+      "missing": 6420
+    },
+    "sodium_mmol_l": {
+      "non_missing": 5904,
+      "missing": 3350
+    },
+    "potassium_mmol_l": {
+      "non_missing": 5899,
+      "missing": 3355
+    },
+    "chloride_mmol_l": {
+      "non_missing": 5904,
+      "missing": 3350
+    },
+    "bicarbonate_mmol_l": {
+      "non_missing": 5901,
+      "missing": 3353
+    },
+    "serum_calcium_mg_dl": {
+      "non_missing": 5901,
+      "missing": 3353
+    },
+    "serum_phosphorus_mg_dl": {
+      "non_missing": 5901,
+      "missing": 3353
+    },
+    "total_protein_g_dl": {
+      "non_missing": 5901,
+      "missing": 3353
+    },
+    "systolic_bp_mean_mmhg": {
+      "non_missing": 6717,
+      "missing": 2537
+    },
+    "diastolic_bp_mean_mmhg": {
+      "non_missing": 6717,
+      "missing": 2537
+    },
+    "systolic_bp_reading_count": {
+      "non_missing": 9254,
+      "missing": 0
+    },
+    "diastolic_bp_reading_count": {
+      "non_missing": 9254,
+      "missing": 0
+    }
+  },
+  "module_feature_coverage": {
+    "nutritional_status": {
+      "features": [
+        "avg_protein_g",
+        "avg_iron_mg",
+        "bmi",
+        "albumin_g_dl"
+      ],
+      "participants_with_all_listed_features": 5340
+    },
+    "anemia_iron": {
+      "features": [
+        "hemoglobin_g_dl",
+        "mcv_fl",
+        "ferritin_ng_ml",
+        "serum_iron_ug_dl"
+      ],
+      "participants_with_all_listed_features": 5876
+    },
+    "glucose_regulation": {
+      "features": [
+        "serum_glucose_mg_dl",
+        "hba1c_percent"
+      ],
+      "participants_with_all_listed_features": 5896
+    },
+    "kidney_health": {
+      "features": [
+        "serum_creatinine_mg_dl",
+        "bun_mg_dl",
+        "urine_albumin_ug_ml",
+        "urine_creatinine_mg_dl"
+      ],
+      "participants_with_all_listed_features": 5798
+    },
+    "kidney_stone": {
+      "features": [
+        "serum_calcium_mg_dl",
+        "serum_phosphorus_mg_dl"
+      ],
+      "participants_with_all_listed_features": 5901
+    },
+    "liver_health": {
+      "features": [
+        "alt_u_l",
+        "ast_u_l",
+        "albumin_g_dl",
+        "total_bilirubin_mg_dl"
+      ],
+      "participants_with_all_listed_features": 5882
+    },
+    "cardiovascular_metabolic": {
+      "features": [
+        "total_cholesterol_mg_dl",
+        "hdl_cholesterol_mg_dl",
+        "triglycerides_mg_dl",
+        "systolic_bp_mean_mmhg",
+        "diastolic_bp_mean_mmhg"
+      ],
+      "participants_with_all_listed_features": 2689
+    },
+    "hydration_electrolytes": {
+      "features": [
+        "sodium_mmol_l",
+        "potassium_mmol_l",
+        "chloride_mmol_l"
+      ],
+      "participants_with_all_listed_features": 5899
+    },
+    "bone_nutrition": {
+      "features": [
+        "serum_vitamin_d_nmol_l",
+        "serum_calcium_mg_dl",
+        "serum_phosphorus_mg_dl"
+      ],
+      "participants_with_all_listed_features": 5900
+    }
+  },
+  "limitations": [
+    "Module coverage is not diagnostic readiness.",
+    "Kidney stone inputs do not establish stone risk.",
+    "Blood pressure averages are descriptive only.",
+    "Source units require documentation verification.",
+    "No astronaut-specific or longitudinal outcomes."
+  ]
+}

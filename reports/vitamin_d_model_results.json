@@ -1,0 +1,20 @@
+{
+  "Dummy Baseline": {
+    "accuracy": 0.708433734939759,
+    "balanced_accuracy": 0.5,
+    "roc_auc": 0.5,
+    "average_precision": 0.29156626506024097
+  },
+  "Logistic Regression": {
+    "accuracy": 0.7289156626506024,
+    "balanced_accuracy": 0.5740287850677461,
+    "roc_auc": 0.671382189239332,
+    "average_precision": 0.461080694139967
+  },
+  "Random Forest": {
+    "accuracy": 0.7192771084337349,
+    "balanced_accuracy": 0.5708733906785854,
+    "roc_auc": 0.6772642941474111,
+    "average_precision": 0.4758310007281613
+  }
+}

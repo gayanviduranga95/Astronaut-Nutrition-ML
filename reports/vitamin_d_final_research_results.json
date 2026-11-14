@@ -1,0 +1,45 @@
+{
+  "model": "Logistic Regression",
+  "feature_set": "30 Day + Season",
+  "training_records": 3316,
+  "testing_records": 830,
+  "cross_validation": {
+    "roc_auc_mean": 0.7820094057290062,
+    "roc_auc_std": 0.01614605731596406,
+    "average_precision_mean": 0.5610338293342229,
+    "balanced_accuracy_mean": 0.6463018780302141
+  },
+  "threshold_selection": {
+    "threshold": 0.25,
+    "recall": 0.8245614035087719,
+    "precision": 0.44862436833239755,
+    "balanced_accuracy": 0.7030774635779906
+  },
+  "development_test": {
+    "roc_auc": 0.7620804520155169,
+    "average_precision": 0.5437196617033935,
+    "accuracy": 0.6373493975903615,
+    "balanced_accuracy": 0.685690391859223,
+    "precision": 0.43400447427293065,
+    "recall": 0.8016528925619835,
+    "brier_score": 0.17111976174723834,
+    "confusion_matrix": [
+      [
+        335,
+        253
+      ],
+      [
+        48,
+        194
+      ]
+    ]
+  },
+  "limitations": [
+    "NHANES general population, not astronauts",
+    "Cross-sectional associations, not future risk",
+    "Previously examined test partition",
+    "Survey weights not incorporated",
+    "Supplement missing-value coding needs final verification",
+    "No independent external validation"
+  ]
+}

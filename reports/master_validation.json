@@ -1,0 +1,85 @@
+{
+  "rows": 9254,
+  "columns": 547,
+  "checks": {
+    "unique_participants": true,
+    "expected_row_count": true,
+    "age_years_range_screen": true,
+    "bmi_range_screen": true,
+    "weight_kg_range_screen": true,
+    "height_cm_range_screen": true,
+    "hemoglobin_g_dl_range_screen": true,
+    "serum_vitamin_d_nmol_l_range_screen": true,
+    "protein_g_average": true,
+    "iron_mg_average": true,
+    "calcium_mg_average": true
+  },
+  "module_input_coverage": {
+    "nutritional_status": {
+      "available_input_features": [
+        "avg_protein_g",
+        "avg_iron_mg",
+        "bmi"
+      ],
+      "participants_with_all_listed_features": 7037,
+      "additional_features_required": true
+    },
+    "anemia_iron": {
+      "available_input_features": [
+        "hemoglobin_g_dl",
+        "mcv_fl",
+        "avg_iron_mg"
+      ],
+      "participants_with_all_listed_features": 6722,
+      "additional_features_required": true
+    },
+    "glucose_regulation": {
+      "available_input_features": [
+        "bmi"
+      ],
+      "participants_with_all_listed_features": 8005,
+      "additional_features_required": true
+    },
+    "kidney_health": {
+      "available_input_features": [],
+      "participants_with_all_listed_features": 0,
+      "additional_features_required": true
+    },
+    "kidney_stone": {
+      "available_input_features": [],
+      "participants_with_all_listed_features": 0,
+      "additional_features_required": true
+    },
+    "liver_health": {
+      "available_input_features": [],
+      "participants_with_all_listed_features": 0,
+      "additional_features_required": true
+    },
+    "cardiovascular_metabolic": {
+      "available_input_features": [
+        "bmi",
+        "waist_cm"
+      ],
+      "participants_with_all_listed_features": 7586,
+      "additional_features_required": true
+    },
+    "hydration_electrolytes": {
+      "available_input_features": [
+        "avg_sodium_mg",
+        "avg_potassium_mg"
+      ],
+      "participants_with_all_listed_features": 7495,
+      "additional_features_required": true
+    },
+    "bone_nutrition": {
+      "available_input_features": [
+        "serum_vitamin_d_nmol_l",
+        "avg_calcium_mg",
+        "avg_phosphorus_mg"
+      ],
+      "participants_with_all_listed_features": 6620,
+      "additional_features_required": true
+    }
+  },
+  "note": "Screening ranges are data-quality heuristics, not clinical reference intervals. Module coverage does not establish diagnostic or ML readiness."
+}
